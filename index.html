@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./app/css/style.css">
+
+  <title>Elite Fire</title>
+  <script src="./app/script/script.js" defer></script>
+  <!-- <script defer>
+    console.log(111)
+    const header = document.querySelector('header')
+
+    // console.log(header)
+    header.addEventListener("scroll", () => {
+      console.log("scroll")
+    })
+  </script> -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header" class="header">
+      <div class="header__container _container">
+        <nav class="header__nav nav menu">
+
+          <input id="menu__checkbox" type="checkbox" />
+          <label class="menu__button" for="menu__checkbox">
+            <span></span>
+          </label>
+
+          <div class="header__logo-wrapper">
+            <a href="" class="header__logo logo logo_dark">
+              <div class="logo__text">Elite Fire</div>
+            </a>
+            <div class="header__slogan">Автоматические биокамины</div>
+          </div>
+
+
+          <ul class="nav__list menu__box">
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Продукция</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Конструктор</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Опыт</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__button button button_color_orange" href="#">
+                <svg class="button__content" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.5092 12.5281C14.4218 11.5981 13.3183 11.0347 12.2442 11.9633L11.6029 12.5246C11.1337 12.932 10.2613 14.8356 6.88815 10.9553C3.51574 7.07999 5.52261 6.47659 5.99254 6.07269L6.63738 5.51074C7.70579 4.58001 7.30259 3.40834 6.53202 2.20225L6.067 1.47171C5.29291 0.268434 4.44999 -0.52181 3.37877 0.407517L2.79996 0.913273C2.32651 1.25817 1.00312 2.37926 0.682104 4.50906C0.295763 7.06453 1.51449 9.99089 4.30669 13.2017C7.09537 16.414 9.82575 18.0275 12.4121 17.9994C14.5616 17.9762 15.8597 16.8228 16.2657 16.4035L16.8466 15.897C17.915 14.9684 17.2512 14.0229 16.1632 13.0908L15.5092 12.5281Z"
+                    fill="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="content__main-section main-section">
+        <div class="main-section__container _container">
+          <div class="main-section__body">
+
+            <div class="main-section__header-wrapper">
+              <h1 class="main-section__title title title_fill_gradient title_size_l">Автоматические биокамины</h1>
+            </div>
+
+            <div class="main-section__price-wrapper price-wrapper">
+              <p class="price-wrapper__text">
+                <span class="price-wrapper__label">
+                  от
+                </span>
+                <span class="price-wrapper__price">99 000 &#8381;</span>
+              </p>
+            </div>
+
+            <div class="main-section__advantages-wrapper">
+              <div class="main-section__advantage-item advantage-item advantage-item_direction_column">
+                <div class="advantage-item__icon">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.331 12.3887L25.893 11.5433C25.6861 10.8912 25.4203 10.2587 25.099 9.65373C25.6135 8.79627 26.7012 6.98344 26.7012 6.98344C26.9087 6.63762 26.8542 6.19494 26.569 5.90977L24.0831 3.42387C23.7979 3.13869 23.3552 3.0842 23.0094 3.29168C22.9871 3.30504 21.2061 4.37367 20.336 4.89451C19.7343 4.57629 19.1058 4.31285 18.458 4.10736C18.1985 3.05408 17.6112 0.66873 17.6112 0.66873C17.5145 0.276035 17.1622 0 16.7578 0H13.2422C12.8377 0 12.4854 0.276035 12.3888 0.668789C12.147 1.65082 11.7428 3.29256 11.5421 4.10707C10.8529 4.32562 10.1861 4.60969 9.54984 4.95562C9.1732 4.72969 8.61193 4.39289 8.09268 4.08135L6.77654 3.29168C6.43055 3.0842 5.98805 3.13875 5.70287 3.42387L3.21686 5.90977C2.93168 6.19494 2.87719 6.63762 3.08467 6.98344C3.09639 7.00307 4.12676 8.72039 4.79977 9.84686C4.52367 10.3924 4.29205 10.9593 4.10736 11.5413C2.93537 11.8329 0.695859 12.3821 0.669609 12.3886C0.276445 12.485 0 12.8374 0 13.2422V16.7578C0 17.1626 0.276504 17.515 0.669668 17.6114C0.695625 17.6178 2.91855 18.1628 4.10836 18.4573C4.31725 19.1195 4.58789 19.7623 4.91672 20.378L3.38191 22.9362C3.17443 23.282 3.22893 23.7247 3.5141 24.0098L6.00006 26.4958C6.28523 26.781 6.72785 26.8355 7.07373 26.628C7.09535 26.615 8.80008 25.5922 9.63697 25.0912C10.2475 25.4163 10.8858 25.6849 11.544 25.8935L12.3887 29.3306C12.4851 29.7237 12.8375 30 13.2422 30H16.7578C17.1623 30 17.5147 29.7238 17.6113 29.331L18.4566 25.8933C19.1327 25.6788 19.785 25.4017 20.4053 25.0655C21.2506 25.5727 23.0094 26.628 23.0094 26.628C23.3552 26.8355 23.7979 26.7811 24.0831 26.4959L26.569 24.0099C26.8542 23.7247 26.9087 23.2821 26.7012 22.9362C26.7012 22.9362 25.6306 21.1519 25.1216 20.3036C25.4326 19.7125 25.6907 19.0945 25.8928 18.4572C26.9371 18.1995 29.3023 17.6183 29.3308 17.6113C29.7237 17.5148 30 17.1625 30 16.7578V13.2422C30 12.8376 29.7238 12.4853 29.331 12.3887ZM28.2422 16.0687C27.2273 16.3182 25.3873 16.7706 25.0359 16.8585L24.9697 16.8751C24.6632 16.9548 24.4232 17.1933 24.3416 17.4993C24.1192 18.333 23.7853 19.1324 23.3489 19.8752C23.1861 20.1524 23.1876 20.4966 23.3529 20.7724C23.3987 20.8486 24.3191 22.3827 24.8408 23.2522L23.3254 24.7676C22.4438 24.2387 20.8811 23.301 20.8679 23.2931C20.5881 23.1251 20.2384 23.1259 19.9596 23.2951C19.1979 23.7571 18.3712 24.1091 17.5023 24.3413C17.199 24.4223 16.9618 24.6589 16.8804 24.9622C16.8319 25.1427 16.7841 25.3337 16.7832 25.337L16.0688 28.2422H13.9314L13.2978 25.6616L13.1269 24.9782C13.0495 24.6681 12.8096 24.4245 12.5008 24.3421C11.6493 24.115 10.8321 23.771 10.0721 23.3198C9.79623 23.156 9.45281 23.1557 9.17654 23.3188C8.98729 23.4306 7.57963 24.2746 6.75768 24.7677L5.24215 23.2522L6.68713 20.8437C6.85359 20.5662 6.85412 20.2197 6.68842 19.9417C6.23232 19.1763 5.88656 18.3554 5.66098 17.5017C5.57912 17.1919 5.3352 16.9513 5.02447 16.8736C4.39535 16.7163 2.70627 16.3013 1.75775 16.0685V13.9314C2.71529 13.6961 4.42594 13.2752 5.02506 13.1236C5.33391 13.0454 5.57631 12.8062 5.65857 12.4983C5.8674 11.7163 6.17549 10.9615 6.57439 10.255C6.72943 9.98045 6.72545 9.64389 6.56402 9.37301C6.13922 8.66016 5.38746 7.40561 4.94496 6.66762L6.46049 5.15203L7.18822 5.58867C8.06525 6.1149 9.06205 6.71297 9.089 6.72908C9.36838 6.89607 9.71725 6.89502 9.99557 6.72621C10.7773 6.2523 11.6201 5.89289 12.5008 5.65793C12.8092 5.57566 13.0488 5.33262 13.1266 5.02301C13.1431 4.95732 13.6581 2.86588 13.931 1.75781H16.069C16.357 2.92723 16.8671 4.99875 16.8732 5.02277C16.9509 5.33262 17.1906 5.5759 17.4993 5.65822C18.342 5.88299 19.1512 6.22225 19.9045 6.6665C20.1807 6.82945 20.5239 6.82898 20.7996 6.66527C21.0462 6.51891 22.4919 5.65201 23.3254 5.15197L24.8408 6.66744C24.3113 7.54998 23.3689 9.1207 23.3294 9.18645C23.1632 9.4633 23.1622 9.809 23.3269 10.0869C23.7738 10.8411 24.115 11.6521 24.341 12.4975C24.422 12.8002 24.6579 13.0369 24.9604 13.1188C25.1418 13.1679 25.3338 13.2159 25.337 13.2167L28.2422 13.9311V16.0687Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <p class="advantage-item__text advantage-item__text_align_center">Свое производство</p>
+              </div>
+
+              <div class="main-section__advantage-item advantage-item advantage-item_direction_column">
+                <div class="advantage-item__icon">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.9998 3.56959C30.0096 2.61211 29.6421 1.71199 28.9651 1.03488C28.2969 0.366621 27.4114 0 26.4679 0C26.4554 0 26.4429 5.85937e-05 26.4303 0.000175781C25.4728 0.0100195 24.5804 0.395977 23.9175 1.0868L18.6665 6.55857L4.92633 2.01146L0.868535 6.06926L12.3512 13.1394L7.62645 18.0628L3.91816 17.454L0 21.3721L6.38988 23.6102L8.62793 30L12.5461 26.0818L11.9373 22.3736L16.8607 17.6488L23.9309 29.1315L27.9887 25.0737L23.4416 11.3336L28.9133 6.08256C29.6041 5.41951 29.9899 4.52707 29.9998 3.56959ZM27.695 4.81301L21.4223 10.8326L25.9774 24.5967L24.2614 26.3126L17.2157 14.8695L10.051 21.7451L10.6635 25.476L9.36316 26.7764L7.77059 22.2294L3.22359 20.6368L4.52396 19.3365L8.25492 19.949L15.1305 12.7844L3.68748 5.73867L5.4034 4.02275L19.1675 8.57777L25.1871 2.30514C25.5198 1.95832 25.9679 1.76461 26.4485 1.75963C26.4548 1.75951 26.4611 1.75951 26.4673 1.75951C26.9409 1.75951 27.3855 1.94355 27.721 2.27906C28.061 2.61896 28.2454 3.07084 28.2404 3.55148C28.2354 4.03213 28.0417 4.48014 27.695 4.81301Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <p class="advantage-item__text advantage-item__text_align_center">Доставка в любую точку мира</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-section__image-content">
+            <img class="main-section__image" src="./app/img/content/main-kamin.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="content__advantages-section advantages-section">
+        <div class="advantages-section__container _container">
+          <div class="advantages-section__body">
+            <h2 class="advantages-section__title title title_fill_gradient title_size_m">
+              Настоящий высокий огонь у вас дома
+            </h2>
+            <p class="advantages-section__description description">
+              Благодаря специальной технологии горения биоэтанола
+              мы добились горения потрясающей красоты
+            </p>
+            <div class="advantages-section__image-wrapper">
+              <img class="advantages-section__image" src="./app/img/content/kamin-fire.png" alt="">
+              <img class="advantages-section__bg-image" src="./app/img/bg-assets/advantages-bg.png" alt="">
+            </div>
+
+            <div class="advantages-section__advantages-wrapper">
+              <div class="advantages-section__advantage-item advantage-item advantage-item_direction_row">
+                <div class="advantage-item__icon">
+                  <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_64_204)">
+                      <path
+                        d="M38.5826 20.0773L37.9632 18.914L36.7865 19.5076C35.8866 19.9615 34.9139 20.188 33.8992 20.1828C30.4252 20.1627 27.5989 17.2782 27.5989 13.753V11.4876C27.5989 7.81329 26.3403 4.20526 24.055 1.32822L23.0001 0L9.46872 17.0351C6.87606 20.1309 5.41652 24.0589 5.35841 28.098C5.29059 32.8138 7.10152 37.2895 10.4578 40.7003C13.8123 44.1096 18.2552 45.9916 22.9682 46H22.9832H22.9848H23.0003H23.0004C27.7073 45.9998 32.1331 44.1693 35.4649 40.8434C38.8045 37.5097 40.6437 33.0751 40.6437 28.3563C40.6436 25.4723 39.931 22.6094 38.5826 20.0773ZM27.7826 35.83C28.0426 35.8306 28.3063 35.811 28.5645 35.7693C28.7347 36.3197 28.8204 36.8936 28.8204 37.4851C28.8204 39.0417 28.2137 40.5046 27.1119 41.6043C26.0128 42.7015 24.5529 43.3054 23 43.3054C22.9962 43.3054 22.9924 43.3054 22.9887 43.3054C21.4389 43.3024 19.9748 42.6804 18.8662 41.5537C17.7567 40.4262 17.158 38.9507 17.1803 37.3993C17.1995 36.0654 17.6822 34.7681 18.5396 33.7465L22.8032 28.3797C22.9867 28.9201 23.0828 29.4903 23.0828 30.0656V31.062C23.0829 33.676 25.1912 35.8149 27.7826 35.83ZM33.5611 38.9364C32.6801 39.8158 31.7089 40.5718 30.6683 41.1958C31.2222 40.0537 31.5151 38.7921 31.5151 37.4851C31.5151 36.0933 31.171 34.7114 30.52 33.4889L29.9006 32.3256L28.7239 32.9192C28.4359 33.0644 28.1251 33.1363 27.7983 33.1353C26.6841 33.1288 25.7776 32.1987 25.7776 31.0619V30.0655C25.7776 28.2796 25.1659 26.526 24.0551 25.1276L23.0001 23.7994L16.4635 32.0285C15.2162 33.5216 14.514 35.4144 14.486 37.3604C14.4669 38.6904 14.7573 39.9801 15.3241 41.151C14.2655 40.5057 13.2762 39.7226 12.3785 38.8103C9.5316 35.9171 7.99544 32.1264 8.05284 28.1367C8.10215 24.7099 9.34225 21.3774 11.5447 18.7532L11.5564 18.7393L22.9297 4.42111C24.2115 6.54211 24.9043 8.99662 24.9043 11.4876V13.753C24.9043 18.7555 28.9324 22.8488 33.8835 22.8775C34.8523 22.8848 35.8137 22.7321 36.7289 22.4358C37.5296 24.2948 37.9489 26.3191 37.9489 28.3564C37.9489 32.3545 36.3907 36.1118 33.5611 38.9364Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_64_204">
+                        <rect width="46" height="46" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="advantage-item__text advantage-item__text_align_start">Пламя яркое, высотой до 20 сантиметров
+                </p>
+              </div>
+              <div class="advantages-section__advantage-item advantage-item advantage-item_direction_row">
+                <div class="advantage-item__icon">
+                  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_64_206)">
+                      <path
+                        d="M8.0214 23.725C5.74574 26.5672 4.49243 30.1761 4.49243 33.8869C4.49243 42.7716 11.7208 50 20.6056 50C29.4903 50 36.7187 42.7716 36.7187 33.8869C36.7187 30.176 35.4654 26.5671 33.1897 23.725L20.6057 8.0083L8.0214 23.725ZM33.7891 33.8869C33.7891 41.1562 27.875 47.0703 20.6057 47.0703C13.3363 47.0703 7.42219 41.1562 7.42219 33.8869C7.42219 30.8391 8.44718 27.8806 10.3084 25.5562L20.6057 12.6957L30.9029 25.5563C32.764 27.8806 33.7891 30.8391 33.7891 33.8869Z"
+                        fill="white" />
+                      <path
+                        d="M45.5077 11.8168C45.5077 10.1352 44.9555 8.55636 43.9108 7.25052L38.1835 0L32.4562 7.25061C31.4116 8.55636 30.8594 10.1353 30.8594 11.8169C30.8594 15.8554 34.145 19.141 38.1835 19.141C42.2221 19.141 45.5077 15.8553 45.5077 11.8168ZM33.789 11.8168C33.789 10.8063 34.12 9.85928 34.7462 9.07784L38.1835 4.72632L41.6209 9.07784C42.2471 9.85918 42.578 10.8062 42.578 11.8168C42.578 14.2399 40.6066 16.2113 38.1835 16.2113C35.7604 16.2113 33.789 14.2399 33.789 11.8168Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_64_206">
+                        <rect width="50" height="50" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="advantage-item__text advantage-item__text_align_start">Работает такой камин на биотопливе</p>
+              </div>
+              <div class="advantages-section__advantage-item advantage-item advantage-item_direction_row">
+                <div class="advantage-item__icon">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_70_256)">
+                      <path
+                        d="M40 2.35676L37.6432 0L20 17.6432L2.35676 0L0 2.35676L17.6432 20L0 37.6432L2.35676 40L20 22.3568L37.6432 40L40 37.6432L22.3568 20L40 2.35676Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_70_256">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="advantage-item__text advantage-item__text_align_start">Он не дымит и не пахнет</p>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="content__refilling-section refilling-section">
+        <div class="refilling-section__container _container">
+          <div class="refilling-section__body">
+
+            <div class="refilling-section__text-wrapper">
+              <h2 class="refilling-section__title title title_fill_gradient title_size_m">
+                заправка
+              </h2>
+              <p class="refilling-section__description description">
+                Внутри не просто труба. Спроектированный нами бак, самого большого обьема среди всех производителей
+              </p>
+              <p class="refilling-section__description description">
+                В наши топливные блоки встроен мощный насос.
+              </p>
+            </div>
+
+            <div class="refilling-section__refilling-wrapper">
+
+
+              <div class="refilling-section__image-wrapper">
+                <div class="refilling-section__widget widget">
+                  <h4 class="widget__title">3,5</h4>
+                  <h4 class="widget__subtitle">минуты</h4>
+                  <p class="widget__description">и бак наполнен на 100% </p>
+                </div>
+                <img class="refilling-section__image" src="./app/img/content/refilling.png" alt="">
+                <img class="refilling-section__bg-image" src="./app/img/bg-assets/refilling-bg.png" alt="">
+              </div>
+
+
+
+              <div class="refilling-section__turn-on-wrapper">
+                <div class="refilling-section__turn-on-icons">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_71_302)">
+                      <path
+                        d="M19.4139 -0.000488281H14.4139C14.0904 -0.000488281 13.828 0.261853 13.828 0.585445V2.92918C13.828 3.25277 14.0904 3.51511 14.4139 3.51511H15.1561V5.27291C15.1561 5.27369 15.1562 5.27439 15.1562 5.27517V11.3666C15.1562 12.4903 14.7794 13.5959 14.0932 14.4857C13.4181 15.3612 12.4629 16.0075 11.3965 16.3012C10.191 16.6332 8.85864 16.5195 7.73361 15.9734C6.7478 15.4948 5.92796 14.698 5.42097 13.7266C5.04187 13.0002 4.8436 12.1858 4.8436 11.3666V5.27517C4.8436 5.27439 4.84371 5.27369 4.84371 5.27291V3.51511H5.58589C5.90948 3.51511 6.17183 3.25277 6.17183 2.92918V0.585445C6.17183 0.261853 5.90948 -0.000488281 5.58589 -0.000488281H0.585933C0.262342 -0.000488281 0 0.261853 0 0.585445V2.92918C0 3.25277 0.262342 3.51511 0.585933 3.51511H1.32811C1.32811 3.51511 1.32811 5.27228 1.32808 5.27303V11.3666C1.32808 13.6041 2.21811 15.7841 3.77892 17.3865C5.34355 18.9929 7.50725 19.9428 9.74992 19.9969C12.0048 20.0513 14.2075 19.2539 15.873 17.7244C17.5181 16.2136 18.5326 14.0878 18.658 11.8565C18.6672 11.6934 18.6718 11.53 18.6718 11.3666C18.6718 11.3666 18.6718 5.27299 18.6717 5.27224V3.51511H19.4139C19.7375 3.51511 19.9998 3.25277 19.9998 2.92918V0.585445C19.9998 0.261853 19.7375 -0.000488281 19.4139 -0.000488281V-0.000488281ZM1.17187 1.17138H4.99996V2.34324H1.17187V1.17138ZM3.67185 3.51511V4.68698H2.49998V3.51511H3.67185ZM17.5075 11.367C17.464 12.1273 17.358 12.8779 17.1333 13.6111C16.6869 15.0674 15.7733 16.3758 14.5629 17.3005C12.5165 18.8639 9.67442 19.2561 7.27619 18.3281C5.2168 17.5312 3.57735 15.8138 2.87967 13.7184C2.6276 12.9613 2.49998 12.1644 2.49998 11.3666V5.85896H3.67177V11.3666C3.67177 13.6044 4.90332 15.7157 6.84385 16.8276C8.952 18.0356 11.7146 17.9161 13.691 16.4902C14.7581 15.7203 15.5677 14.6026 15.9777 13.3522C16.7601 10.9661 16.0822 8.35851 16.3492 5.86165C16.7383 5.8613 17.1274 5.86095 17.5166 5.8606C17.3594 7.68363 17.6113 9.55311 17.5075 11.367ZM17.4999 4.68698H16.328V3.51511H17.4999V4.68698ZM18.828 2.34324H14.9999V1.17138H18.828V2.34324Z"
+                        fill="#FFCF7A" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_71_302">
+                        <rect width="20" height="20" fill="white" transform="translate(0 -0.000488281)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <span class="refilling-section__dash dash dash_width_short"></span>
+
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_71_295)">
+                      <path d="M8.88892 -0.000488281H11.1111V11.1106H8.88892V-0.000488281Z" fill="#FFCF7A" />
+                      <path
+                        d="M15.0009 1.33813L13.888 3.26175C16.2873 4.64948 17.7778 7.23136 17.7778 9.99959C17.7778 14.2884 14.2888 17.7774 10 17.7774C5.71123 17.7774 2.22222 14.2884 2.22222 9.99959C2.22222 7.23136 3.71267 4.64948 6.11198 3.26175L4.99913 1.33813C1.91551 3.12199 0 6.44086 0 9.99959C0 15.5135 4.48611 19.9996 10 19.9996C15.5139 19.9996 20 15.5135 20 9.99959C20 6.44086 18.0845 3.12199 15.0009 1.33813Z"
+                        fill="#FFCF7A" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_71_295">
+                        <rect width="20" height="20" fill="white" transform="translate(0 -0.000488281)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </div>
+                <p class="refilling-section__turn-on-text">Достаточно вставить шланг Нажать кнопку</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content__smart-section smart-section">
+        <div class="smart-section__container _container">
+          <div class="smart-section__body">
+            <h2 class="smart-section__title title title_fill_gradient title_size_m">
+              Умный камин
+              <span class="smart-section__dash dash dash_width_long"></span>
+              очень умный
+            </h2>
+
+            <div class="smart-section__image-wrapper">
+              <div class="smart-section__label_type_text">
+                <p class="smart-section__description description">
+                  Даже если у Вас нет своего решения по умному дому.
+                </p>
+                <p class="smart-section__description description">
+                  Мы отлично ладим с Яндекс.Алиса и Mi Home.
+                </p>
+              </div>
+              <p class="smart-section__label smart-section__label_type_yandex">Яндекс.Алиса</p>
+              <p class="smart-section__label smart-section__label_type_xiaomi">Mi Home Xiaomi</p>
+              <img class="smart-section__image" src="./app/img/content/smart-kamin.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="content__get-catalog-section get-catalog-section">
+        <div class="get-catalog-section__container _container">
+          <div class="get-catalog-section__body">
+            <h3 class="get-catalog-section__title">
+              Получите каталог с моделями и ценами на всю нашу продукцию
+            </h3>
+            <a class="get-catalog-section__button button button_color_orange" href="#">
+              Получить каталог!
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content__details-section details-section">
+        <div class="details-section__container _container">
+          <div class="details-section__body">
+            <div class="details-section__info-wrapper">
+              <div class="details-section__kit-wrapper">
+
+                <div class="details-section__header">
+                  <h3 class="details-section__title">Топливный блок</h3>
+                  <div class="details-section__image-wrapper">
+                    <div class="details-section__caption">
+                      <div class="details-section__label footnote">
+                        Лицевая панель из жаропрочной нержавеющей стали толщиной 5 мм
+                      </div>
+                    </div>
+                    <img src="./app/img/content/details-kamin.png" alt="">
+                  </div>
+                </div>
+
+                <div class="details-section__lists-container"> 
+                  <div class="details-section__finishing-wrapper list-wrapper">
+                    <h4 class="list-wrapper__title">Варианты отделки</h4>
+                    <ul class="list-wrapper__list list-wrapper__list_columns_two">
+                      <li class="list-wrapper__item">черный матовый</li>
+                      <li class="list-wrapper__item">шлифованная сталь</li>
+                      <li class="list-wrapper__item">керамика</li>
+                      <li class="list-wrapper__item">нитрид титана</li>
+                    </ul>
+                  </div>
+  
+                  <div class="details-section__finishing-list-wrapper list-wrapper">
+                    <h4 class="list-wrapper__title">Стандартная комплектация</h4>
+                    <ul class="list-wrapper__list list-wrapper__list_columns_two">
+                      <li class="list-wrapper__item">Управление с кнопок</li>
+                      <li class="list-wrapper__item">С помощью пульта</li>
+                      <li class="list-wrapper__item">Умный дом</li>
+                      <li class="list-wrapper__item">Беcшумность</li>
+                      <li class="list-wrapper__item">Датчик С02</li>
+                      <li class="list-wrapper__item">Датчик пролива</li>
+                      <li class="list-wrapper__item">Датчик температуры</li>
+                      <li class="list-wrapper__item">Датчик наклона</li>
+                      <li class="list-wrapper__item">Дисплей</li>
+                      <li class="list-wrapper__item">Индикатор уровня топлива</li>
+                      <li class="list-wrapper__item">Блокировка залива топлива</li>
+                      <li class="list-wrapper__item">Кнопка отключения от сети на лицевой панели</li>
+                    </ul>
+                  </div>
+                </div>
+               
+              </div>
+
+              <div class="details-section__size-wrapper">
+                  <h3 class="details-section__title">
+                    Очаги для встраивания в нишу по Вашим размерам
+                  </h3> 
+
+                  <div class="details-section__size-list-wrapper list-wrapper">
+                    <ul class="list-wrapper__list list-wrapper__list_columns_one">
+                      <li class="list-wrapper__item">Короб выполненый из нержавеющей стали 2 мм  или  холоднокатанной стали 3 мм</li>
+                      <li class="list-wrapper__item">Окрашен  кремнийорганической и акриловой краской</li>
+                      <li class="list-wrapper__item">Каждый комплектуется керамическим матом</li>
+                      <li class="list-wrapper__item">Лучшая теплоизолированость из доступных</li>
+                      <li class="list-wrapper__item">Изготавливается исключительно под Ваши размеры</li>
+                      <li class="list-wrapper__item">Наши технологи спроектируют техническое задание для ниши учитывая
+                        особенности  Вашего ремонта.
+                      </li>
+                      <li class="list-wrapper__item">Размер ограничен только Вашей фантазией</li>
+                      <li class="list-wrapper__item">Отделка стемалитом и цветными металлами</li>
+                    </ul>
+                  </div>
+
+                  <div class="details-section__carousel carousel">
+
+                  </div>
+                </div>
+                </div>
+              </div>
+              <!-- <div class="details-section__ready-solution-wrapper"></div>
+              <div class="details-section__size-wrapper"></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content__solution-section solution-section">
+        <div class="solution-section__container _container">
+          <div class="solution-section__body">
+            <h2 class="solution-section__title title title_fill_gradient title_size_m">
+              Есть задача? Есть решение!
+            </h2>
+            <div class="solution-section__gallery gallery">
+              <div class="gallery-item"></div>
+              <div class="gallery-item"></div>
+              <div class="gallery-item"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content__reasons-section reasons-section">
+        <div class="reasons-section__container _container">
+          <div class="reasons-section__body">
+            <div class="reasons-section__title-wrapper">
+              <h2 class="reasons-section__title title title_fill_gradient title_size_m">
+                Почемы мы можем многое?
+              </h2>
+              <h2 class="reasons-section__title title title_fill_gradient title_size_m">
+                Свои люди. Свои станки. Своя лаборатория
+              </h2>
+            </div>
+            <div class="reasons-section__gallery gallery">
+              <div class="gallery-item"></div>
+              <div class="gallery-item"></div>
+              <div class="gallery-item"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- //////////// -->
+      <!-- <div class="qualities-section__carousel carousel">
+        <div class="carousel__image-wrapper">
+          <img class="carousel__image" src="./app/img/content/photo_banner.jpg" alt="">
+        </div>
+        <div class="carousel__control-wrapper">
+          <div class="carousel__controls">
+            <button class="carousel__prev">
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 1L1 6L6 11" stroke="#1B1A17" stroke-width="0.5" />
+              </svg>
+            </button>
+            <span class="carousel__count">01</span>
+            <button class="carousel__next">
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11L6 6L1 1" stroke="#1B1A17" stroke-width="0.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div> -->
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container _container">
+        <div class="footer__body">
+
+          <div class="footer__column link-column">
+            <a class="link-column__header logo" href="#">
+              <div class="logo__text">Elite Fire</div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
