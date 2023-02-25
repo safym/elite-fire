@@ -1,0 +1,215 @@
+@import "../css/normalize.css";
+@import "../scss/main";
+
+@import "./root";
+@import "./var";
+
+@import "./media/media";
+@import "./_animations/animation";
+
+@import "./sections/_header/header";
+@import "./sections/_main-section/main-section";
+@import "./sections/_advantages-section/advantages-section";
+@import "./sections/_refilling-section/refilling-section";
+@import "./sections/_smart-section/smart-section";
+@import "./sections/_details-section/details-section";
+
+@import "./sections/_get-catalog-section/get-catalog-section";
+@import "./sections/_solution-section/solution-section";
+@import "./sections/_reasons-section/reasons-section";
+
+@import "./sections/footer";
+
+@import "./components/_link/link";
+@import "./components/_nav/nav";
+@import "./components/_menu/menu";
+
+// @import "./components/_info-block/info-block";
+@import "./components/_title/title";
+@import "./components/_description/description";
+@import "./components/_dash/dash";
+
+@import "./components/_button/button";
+@import "./components/_logo/logo";
+
+//_price-wrapper 
+.price-wrapper {
+  font-family: $primary-font-family;
+  font-weight: 300;
+  line-height: 40px;
+
+  color: var(--colorOrange);
+
+  &__label {
+    font-size: 18px;
+    letter-spacing: 0.10em;
+  }
+
+  &__price {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+  }
+}
+
+// .heading {
+//   font-family: $primary-font-family;
+  
+//   text-transform: uppercase;
+
+//   background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   background-clip: text;
+//   text-fill-color: transparent;
+// }
+
+.advantage-item {
+  display: flex;
+
+  &__text {
+    display: inline;
+    font-family: $primary-font-family;
+    line-height: 157%;
+
+    &_align {
+      &_center {
+        text-align: center;
+      }
+
+      &_start {
+        text-align: start;
+      }
+    }
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 50px;
+    min-height: 50px;
+  }
+
+  &_direction {
+    &_row {
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+
+      & *:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &_column {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      & *:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.widget {
+  width: 151px;
+  height: 151px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  border-radius: 50%;
+  color: var(--colorBlack);
+  background: radial-gradient(100% 65.98% at 100% 73.18%, #FFFFFF 0.31%, #FFE2A4 59.23%, #FFD47C 100%);
+  box-shadow: 0px 0px 74px 48px rgba(255, 207, 122, 0.2);
+  .widget__title {
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42%;
+  }
+
+  .widget__subtitle {
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 42%;
+  }
+
+  .widget__description {
+    font-family: $secondary-font-family;
+
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+  position: relative;
+
+  .gallery-item {
+    min-width: 370px;
+    min-height: 267px;
+    object-fit: cover;
+
+    background-color: var(--colorBlack);
+  }
+}
+
+.list-wrapper {
+  &__title {
+    margin-bottom: 10px;
+
+    color: #757575;
+    font-size: 18px;
+    line-height: 193%;
+    font-weight: 400;
+  }
+
+  &__list {  
+    &_columns {
+      &_one {
+        columns: 1;
+      }
+      &_two {
+        columns: 2;
+      }
+    }
+  }
+
+  &__item {
+    line-height: 193%;
+    font-size: 14px;
+  }
+}
+
+.footnote {
+  position: relative;
+
+  &::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform: skew(30deg);
+    border-top:1px solid var(--colorOrange);
+    border-right:1px solid var(--colorOrange);
+    left:-25px;
+    bottom:-100%;
+  }
+}
