@@ -1,0 +1,111 @@
+@import "../../var";
+
+.main-section {
+  position: relative;
+  padding-top: 75px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    opacity: $bg-shadows-opacity;
+    background: $bg-shadow-color-black;
+    -webkit-filter: blur(300px);
+    filter: blur(300px);
+    border-radius: 300px;
+    transform: rotate(45deg);
+    z-index: $bg-shadow-z-index;
+
+    width: 874.92px;
+    height: 927.64px;
+  }
+
+  &__container {
+    position: relative;
+
+    padding: 0 $container-padding 126px $container-padding;
+    box-sizing: content-box;
+  }
+
+  &__body {
+    max-width: 780px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    z-index: $block-z-index;
+  }
+
+  &__title {
+
+  }
+
+  &__header-wrapper {
+    margin-bottom: 29px;
+  }
+
+  &__price-wrapper {
+    margin-bottom: 86px;
+  }
+
+  &__advantages-wrapper {
+    display: flex;
+  }
+
+  &__advantage-item {
+    max-width: 130px;
+    font-size: 14px;
+
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+  }
+
+  &__image-content {
+    max-width: none;
+
+    position: absolute;
+    top: 0;
+    right: $container-padding;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      opacity: $bg-shadows-opacity;
+      position: absolute;
+      width: 605.91px;
+      height: 192.46px;
+      left: -40px;
+      bottom: -50px;
+
+      background: $bg-shadow-color-black;
+      -webkit-filter: blur(300px);
+      filter: blur(300px);
+      border-radius: 500px;
+      transform: rotate(157.75deg);
+      z-index: $bg-shadow-z-index;
+    }
+
+    &::after {
+      content: "";
+      opacity: 60%;
+
+      position: absolute;
+      width: 400.34px;
+      height: 163.39px;
+      left: 160px;
+      top: 60px;
+
+      background-color: aqua;
+      background: radial-gradient(circle, rgba(255, 207, 122, 1) 0%, rgba(167, 78, 2, 1) 100%);
+      -webkit-filter: blur(300px);
+      filter: blur(300px);
+      border-radius: 50%;
+
+      animation: scale-m 1.5s alternate infinite ease-in-out;
+      z-index: $bg-shadow-z-index;
+    }
+  }
+}

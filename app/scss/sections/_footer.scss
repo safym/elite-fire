@@ -1,0 +1,14 @@
+@import "../var";
+
+.footer {
+  background-color: var(--accentColorDarkGray);
+
+  &__body {
+    display: flex;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+}

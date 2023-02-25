@@ -1,0 +1,140 @@
+@import "../../var";
+
+.refilling-section {
+  &__container {
+
+    padding: 0 $container-padding 80px $container-padding;
+    box-sizing: content-box;
+  }
+
+  &__body {
+    display: flex;
+    position: relative;
+  }
+
+  &__text-wrapper {
+    max-width: 442px;
+
+    padding-top: 95px;
+    padding-bottom: 260px;
+    padding-left: 84px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & *:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__title {
+
+  }
+
+  &__description {
+    letter-spacing: 0.01em;
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  &__refilling-wrapper {
+    min-width: 703;
+    width: 60%;
+    position: relative;
+  }
+
+  &__widget {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    z-index: $block-z-index;
+    animation: float 2s ease-in-out infinite;
+  }
+
+  &__image-wrapper {
+    height: 100%;
+
+    &::before {
+      content: "";
+      width: 500px;
+      height: 500px;
+      filter: blur(30px);
+      border-radius: 300px;
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      opacity:30%;
+      background: #100a09;
+      z-index: $bg-shadow-z-index;
+    }
+  }
+
+  &__image {
+    max-width: none;
+    position: absolute;
+    top: -16%;
+    left: -32px;
+
+
+  }
+
+  &__bg-image {
+    max-width: none;
+    position: absolute;
+    top: -30%;
+    left: 15%;
+  }
+
+  &__turn-on-wrapper {
+    left: 7%;
+    bottom: 9.5%;
+    position: absolute;
+    z-index: $block-z-index;
+  }
+
+  &__turn-on-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__turn-on-icons {
+    min-width: 109px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &__turn-on-text {
+    max-width: 210px;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.025em;
+
+    /* or 171% */
+  }
+
+  &__advantage-item {}
+
+  &__decoration-circle-s {
+    max-width: none;
+    position: absolute;
+    bottom: 30%;
+    right: 200px;
+    z-index: $image-z-index;
+  }
+
+  &__decoration-circle-m {
+    max-width: none;
+    position: absolute;
+    bottom: 4%;
+    right: 40%;
+    z-index: $image-z-index;
+  }
+
+}

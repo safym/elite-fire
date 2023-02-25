@@ -1,0 +1,46 @@
+.details-section {
+  &__container {
+    padding: 0 $container-padding;
+    box-sizing: content-box;
+  }
+
+  &__body {
+  }
+
+  &__info-wrapper {}
+
+  &__kit-wrapper {}
+
+  &__size-wrapper {}
+
+  &__header {}
+
+  &__title {
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 25px;
+  }
+
+  &__image-wrapper {
+    font-size: 14px;
+    line-height: 193%;
+  }
+
+  &__caption {}
+
+  &__label {}
+
+  &__finishing-wrapper {
+    
+  }
+
+  &__lists-container {
+    & * {
+      margin-bottom: 50px;
+    }
+    & :not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+
+}

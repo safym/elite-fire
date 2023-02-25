@@ -1,0 +1,50 @@
+@import "../../var";
+
+.header {
+  width: 100%;
+  margin-top: 70px;
+
+  transition: background-color 0.2s ease;
+  &__container {
+    position: relative;
+
+    padding: $container-padding;
+    box-sizing: content-box;
+
+    min-height: $header-height;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+
+    & *:not(:last-child) {
+      margin-right: 39px;
+    }
+  }
+  &__slogan {
+    max-width: 100px;
+    
+    font-family: $primary-font-family;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+
+    color: #6D6D6D;
+  }
+
+  &_position {
+    &_sticky {
+      position: sticky;
+      position: -webkit-sticky; 
+      top: 0;
+
+      z-index: 100;
+      background-color: #1a1a19;
+    }
+  }
+}
