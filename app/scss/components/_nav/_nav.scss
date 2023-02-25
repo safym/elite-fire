@@ -1,0 +1,49 @@
+@import "../../var";
+
+.nav {
+  position: relative;
+  height: $header-height;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    height: 100%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    transition: 0.25s;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: $primary-font-size;
+    font-size: 13px;
+    line-height: 16px;
+
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    min-height: 50px;
+    min-width: 50px;
+  }
+}

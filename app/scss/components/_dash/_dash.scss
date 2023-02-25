@@ -1,0 +1,19 @@
+@import "../../var";
+
+.dash {
+  display: inline-block;
+  vertical-align:super;
+
+  height: 1px;
+  background-color: var(--colorGrey);
+
+  &_width {
+    &_short {
+      width: 30px;
+    }
+
+    &_long {
+      width: 40px;
+    }
+  }
+}

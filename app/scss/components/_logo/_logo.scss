@@ -1,0 +1,18 @@
+@import "../../var";
+
+.logo {
+  &__text {
+    font-family: $logo-font-family;
+    font-size: 20px;
+    
+    line-height: 50px;
+    letter-spacing: 0.105em;
+    color: var(--colorWhite);
+    
+    transition: 0.25s;
+    text-transform: uppercase;
+    &:hover {
+      color: var(--colorOrange);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../var";
+
+.title {
+  position: relative;
+
+  font-family: $primary-font-family;
+
+  text-transform: uppercase;
+
+  &_fill {
+    &_gradient {
+      background: linear-gradient(240.22deg, #FFFFFF 31.8%, rgba(255, 255, 255, 0.1) 87.73%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    &_color {
+      font-weight: 300;
+      color: var(--colorWhite);
+    }
+  }
+
+  &_size {
+    &_m {
+      font-size: 40px;
+      font-weight: 250;
+      line-height: 150%;
+      letter-spacing: 0.07em;
+    }
+    &_l {
+      font-weight: 250;
+      font-size: 64px;
+      line-height: 125%;
+      letter-spacing: 0.05em;
+      line-height: 125%;
+    }
+  }
+}
