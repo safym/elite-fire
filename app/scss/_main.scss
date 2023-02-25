@@ -1,0 +1,21 @@
+@import "./var";
+
+body {
+  font-family: $primary-font-family;
+  font-weight: $primary-font-weight;
+  
+  color: white;
+
+  // background-color: #1a1a19;
+  background-image: url(../img/bg-assets/bg.png);
+}
+
+._container {
+  max-width: $container-width;
+  margin: 0 auto;
+  // border: 1px solid blue;
+}
+
+.content {
+  flex: 1 1 auto;
+}
