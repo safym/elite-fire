@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: local('Lab Grotesque Thin'), local('Lab-Grotesque-Thin'),
+      url('../fonts/LabGrotesque/LabGrotesque-Thin.woff2') format('woff2'),
+      url('../fonts/LabGrotesque/LabGrotesque-Thin.woff') format('woff'),
+      url('../fonts/LabGrotesque/LabGrotesque-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: local('Lab Grotesque Light'), local('Lab-Grotesque-Light'),
+      url('../fonts/LabGrotesque/LabGrotesque-Light.woff2') format('woff2'),
+      url('../fonts/LabGrotesque/LabGrotesque-Light.woff') format('woff'),
+      url('../fonts/LabGrotesque/LabGrotesque-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: local('Lab Grotesque Regular'), local('Lab-Grotesque-Regular'),
+      url('../fonts/LabGrotesque/LabGrotesque-Regular.woff2') format('woff2'),
+      url('../fonts/LabGrotesque/LabGrotesque-Regular.woff') format('woff'),
+      url('../fonts/LabGrotesque/LabGrotesque-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: local('Lab Grotesque Medium'), local('Lab-Grotesque-Medium'),
+      url('../fonts/LabGrotesque/LabGrotesque-Medium.woff2') format('woff2'),
+      url('../fonts/LabGrotesque/LabGrotesque-Medium.woff') format('woff'),
+      url('../fonts/LabGrotesque/LabGrotesque-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lab Grotesque';
+  src: local('Lab Grotesque Bold'), local('Lab-Grotesque-Bold'),
+      url('../fonts/LabGrotesque/LabGrotesque-Bold.woff2') format('woff2'),
+      url('../fonts/LabGrotesque/LabGrotesque-Bold.woff') format('woff'),
+      url('../fonts/LabGrotesque/LabGrotesque-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scania Sans CY';
+  src: local('Scania Sans CY  Regular'), local('Scania-Sans-CY--Regular'),
+      url('../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2') format('woff2'),
+      url('../fonts/ScaniaCY/ScaniaSansCY-Regular.woff') format('woff'),
+      url('../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scania Sans CY';
+  src: local('Scania Sans CY  Bold'), local('Scania-Sans-CY--Bold'),
+      url('../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2') format('woff2'),
+      url('../fonts/ScaniaCY/ScaniaSansCY-Bold.woff') format('woff'),
+      url('../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scania Sans CY Headline';
+  font-style: normal;
+  src: 
+    url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype"),
+}
+
+$primary-font-family: 'Lab Grotesque';
+$secondary-font-family: 'Scania Sans CY';
+$logo-font-family: 'Scania Sans CY Headline';
+
+$primary-font-weight: 400;
+$secondary-font-weight: 300;
+$tertiary-font-weight: 500;
+// $tertiary-font-weight: 100; 4?
+
+$primary-font-size: 16px;
+$secondary-font-size: 14px;
+$tertiary-font-size: 12px;
+$title-font-size: 32px;
+
+$header-height: 50px;
+$container-width: 1194px;
+$container-padding: 15px;
+
+$bg-shadows-opacity: 30%;
+
+$bg-shadow-z-index: -1;
+$image-z-index: 2;
+$block-z-index: 3;
+
+$bg-shadow-color-black: #000000;
