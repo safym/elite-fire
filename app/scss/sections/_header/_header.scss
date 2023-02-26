@@ -44,7 +44,17 @@
       top: 0;
 
       z-index: 100;
-      background-color: #1a1a19;
+      background-color: var(--colorDarkGrey);
+    }
+    &_fixed {
+       margin: 0;
+
+      position: fixed;
+      position: -webkit-fixed; 
+      top: 0;
+  
+      z-index: 100;
+      background-color: var(--colorDarkGrey);
     }
   }
 }
