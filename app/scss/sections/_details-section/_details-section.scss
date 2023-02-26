@@ -1,38 +1,46 @@
 .details-section {
 
-
-
   &__container {
-    padding: 0 $container-padding;
+    padding: 50px $container-padding;
     box-sizing: content-box;
   }
 
   &__body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:  minmax(1fr, auto) repeat(2, 1fr);
+    grid-template-rows: minmax(740px, auto)  minmax(500px, auto);
     grid-column-gap: 120px;
     grid-row-gap: 120px;
 
-    grid-template-areas: "a b";
+    grid-template-areas: 
+      "kit-wrapper size-wrapper"
+      "finishing-wrapper accessories-wrapper";
+  }
+
+  &__grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
   }
 
   &__kit-wrapper {
-    position: relative;
-    grid-area: a;
+    grid-area: kit-wrapper;
     padding-top: 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  }
+  
+  &__size-wrapper {
+    grid-area: size-wrapper;
+  }
+  
+  &__finishing-wrapper {
+    grid-area: finishing-wrapper;
+  }
+  
+  &__accessories-wrapper {
+    grid-area: accessories-wrapper;
   }
 
-  &__size-wrapper {
-    position: relative;
-    grid-area: b;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+
 
   &__header {}
 
@@ -51,8 +59,5 @@
   }
 
   &__label {}
-
-  &__finishing-wrapper {}
-
-
 }
+
