@@ -51,9 +51,9 @@
 @font-face {
   font-family: 'Scania Sans CY';
   src: local('Scania Sans CY  Regular'), local('Scania-Sans-CY--Regular'),
-      url('../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2') format('woff2'),
-      url('../fonts/ScaniaCY/ScaniaSansCY-Regular.woff') format('woff'),
-      url('../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf') format('truetype');
+      url('../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2') format('woff2'),
+      url('../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff') format('woff'),
+      url('../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -61,9 +61,9 @@
 @font-face {
   font-family: 'Scania Sans CY';
   src: local('Scania Sans CY  Bold'), local('Scania-Sans-CY--Bold'),
-      url('../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2') format('woff2'),
-      url('../fonts/ScaniaCY/ScaniaSansCY-Bold.woff') format('woff'),
-      url('../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf') format('truetype');
+      url('../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2') format('woff2'),
+      url('../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff') format('woff'),
+      url('../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -72,7 +72,7 @@
   font-family: 'Scania Sans CY Headline';
   font-style: normal;
   src: 
-    url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype"),
+    url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype"),
 }
 
 $primary-font-family: 'Lab Grotesque';
