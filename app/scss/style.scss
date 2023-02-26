@@ -13,7 +13,6 @@
 @import "./sections/_refilling-section/refilling-section";
 @import "./sections/_smart-section/smart-section";
 @import "./sections/_details-section/details-section";
-
 @import "./sections/_get-catalog-section/get-catalog-section";
 @import "./sections/_solution-section/solution-section";
 @import "./sections/_reasons-section/reasons-section";
@@ -23,14 +22,12 @@
 @import "./components/_link/link";
 @import "./components/_nav/nav";
 @import "./components/_menu/menu";
-
-// @import "./components/_info-block/info-block";
 @import "./components/_title/title";
 @import "./components/_description/description";
 @import "./components/_dash/dash";
-
 @import "./components/_button/button";
 @import "./components/_logo/logo";
+@import "./components/_carousel/carousel";
 
 //_price-wrapper 
 .price-wrapper {
@@ -172,6 +169,7 @@
 }
 
 .list-wrapper {
+
   &__title {
     margin-bottom: 10px;
 
@@ -204,12 +202,39 @@
   &::before{
     content:"";
     position:absolute;
-    width:100%;
-    height:100%;
-    transform: skew(30deg);
+    width: 80%;
+    height: 140%;
+    transform: skew(35deg);
     border-top:1px solid var(--colorOrange);
     border-right:1px solid var(--colorOrange);
-    left:-25px;
-    bottom:-100%;
+    left: 10px;
+    bottom:-160%;
+  }
+}
+
+.blur {
+  --blur: 50px;
+--spread: 50px;
+
+--grad: transparent calc(var(--spread)), 
+    #fff calc(var(--spread) + var(--blur)), 
+    #fff calc(100% - (var(--spread) + var(--blur))), 
+    transparent calc(100% - var(--spread));
+
+mask-image: 
+  linear-gradient(to right, var(--grad)),
+  linear-gradient(to bottom, var(--grad));
+mask-composite: intersect;
+}
+
+.lists-container {
+
+  &__list {
+    margin-bottom: 50px;
+  }
+    
+
+  & :last-child {
+    margin-bottom: 0px;
   }
 }

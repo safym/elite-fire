@@ -1,24 +1,44 @@
 .details-section {
+
+
+
   &__container {
     padding: 0 $container-padding;
     box-sizing: content-box;
   }
 
   &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  minmax(1fr, auto) repeat(2, 1fr);
+    grid-column-gap: 120px;
+    grid-row-gap: 120px;
+
+    grid-template-areas: "a b";
   }
 
-  &__info-wrapper {}
+  &__kit-wrapper {
+    position: relative;
+    grid-area: a;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-  &__kit-wrapper {}
-
-  &__size-wrapper {}
+  &__size-wrapper {
+    position: relative;
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &__header {}
 
   &__title {
     font-size: 24px;
     line-height: 150%;
-    margin-bottom: 25px;
   }
 
   &__image-wrapper {
@@ -26,21 +46,13 @@
     line-height: 193%;
   }
 
-  &__caption {}
+  &__caption {
+    margin-bottom: 30px;
+  }
 
   &__label {}
 
-  &__finishing-wrapper {
-    
-  }
+  &__finishing-wrapper {}
 
-  &__lists-container {
-    & * {
-      margin-bottom: 50px;
-    }
-    & :not(:last-child) {
-      margin-bottom: 0px;
-    }
-  }
 
 }
