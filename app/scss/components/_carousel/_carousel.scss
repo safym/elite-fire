@@ -1,0 +1,26 @@
+@import "../../var";
+
+.carousel {
+  position: relative;
+
+
+  max-width: 537px;
+  min-height: 346px;
+
+  background-color: var(--colorBlack);
+
+  &__controls {
+    width: 63px;
+
+    position: absolute;
+
+    left: 7%;
+    bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+  
+    & :not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
