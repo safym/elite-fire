@@ -20,13 +20,48 @@ window.onresize = () => {
 // constructor
 
 const slider = document.querySelector('.slider__input');
-const total = document.querySelector('.constructor__length-result-value');
+const totalLengthElement = document.querySelector('.constructor__length-result-value');
+const totalSumElement = document.querySelector('.constructor__price');
 
-total.innerHTML = `${slider.value} м`;
+const configurationElement =  document.querySelector('.constructor__configuration-wrapper');
 
-slider.addEventListener('input', (e) => {
-  total.innerHTML = `${e.target.value} м`;
+let length = slider.value;
+totalLengthElement.innerHTML = `${length} м`;
+
+const minSum = 86000;
+let totalSum = minSum + (length * 2000);
+totalSumElement.innerHTML = `${totalSum.toLocaleString('ru-RU')} &#8381;`;
+
+const optionValue = 1000;
+
+
+configurationElement.addEventListener('input', (e) => {
+  if (e.target.classList.contains('slider__input')) {
+    const lengthCoeff = e.target.value
+    totalSum = minSum + (lengthCoeff * 2000);
+    totalLengthElement.innerHTML = `${lengthCoeff} м`;
+  }
+  if (e.target.classList.contains('checkbox__input')) {
+    (e.target.checked)
+    ? totalSum = totalSum + optionValue
+    : totalSum = totalSum - optionValue
+  }
+
+  totalSumElement.innerHTML = `${totalSum.toLocaleString('ru-RU')} &#8381;`;
 });
+
+
+// function getFormElements(form) {
+//   const result = {};
+//   const elements = form.querySelectorAll("[data-element]");
+
+//   for (const formElement of elements) {
+//     const name = formElement.dataset.element;
+//     result[name] = formElement;
+//   }
+
+//   return result;
+// }
 
 
 // carousel with pagination
