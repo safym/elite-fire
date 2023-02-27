@@ -1,17 +1,17 @@
 :root {
-  --colorWhite: white;
-
-  --balckTextColor: rgba(27, 26, 23, 0.82);
-  --whiteTextColor: rgba(255, 255, 255, 0.75);
-
+  --colorPrimary: #FFCF7A;
+  --colorPrimary-lt: #ECCF94;
+  --colorPrimary-dk: #F98B4D;
+  
+  --colorSecondary: #949494;
+  --colorSecondary-lt: #757575;
+  --colorSecondary-ltr: #6D6D6D;
+  --colorSecondary-dk: #232323;
+  --colorSecondary-dkr: #121212;
+  
+  --primaryTextColor: white;
   --colorBlack: #000000;
-  --mainColorBlack: #121212;
-  --colorGrey: #949494;
 
-  --colorDarkGrey: #1a1a19;
-  --colorOrange: #FFCF7A;
-  --colorBeige: #ECCF94;
-  --colorTransparent: rgba(255, 255, 255, 0);
-
+  --colorPaginationActive: var(--colorPrimary);
   --colorPaginationInactive: #464239;
 }
