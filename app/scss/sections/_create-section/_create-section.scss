@@ -1,0 +1,131 @@
+.create-section {
+  &__container {
+    padding: 50px $container-padding;
+    box-sizing: content-box;
+  }
+
+  &__body {}
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px; //67
+  }
+
+  &__constructor-wrapper {}
+}
+
+
+
+///////////
+.constructor {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(533px, auto));
+  grid-template-rows: minmax(375px, auto) minmax(60px, auto);
+  grid-column-gap: 80px;
+  grid-row-gap: 88px;
+
+  &__title {
+    font-weight: 500;
+
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+
+    &_size {
+      &_s {
+        letter-spacing: 0.2em;
+        font-size: 10px;
+      }
+
+      &_m {
+        letter-spacing: 0.135em;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__carousel-gallery {
+    max-width: 330px;
+  }
+
+  &__columns-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & *:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__column {
+    width: 40%;
+  }
+
+  &__configuration-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__configuration-results {
+    display: flex;
+    position: relative;
+  }
+
+  &__length-result-wrapper {
+    width: 45%;
+  }
+
+  &__front-result-wrapper {}
+
+  &__length-result-value {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__price-wrapper {
+    width: 45%;
+  }
+
+  &__button {
+    width: 45%;
+  }
+}
+
+.constructor__photo-wrapper {}
+
+.constructor__length-wrapper {}
+
+.constructor__length-value {}
+
+.constructor__front-color {}
+
+.constructor__length-slider {}
+
+.constructor__front-type {}
+
+.constructor__carousel-gallery {}
+
+
+.constructor__additional-options {}
+
+////
+
+
+.additional-options__column {}
+
+////
+
+.constructor__total {}
+
+.constructor__price-wrapper {}
+
+.constructor__button {}

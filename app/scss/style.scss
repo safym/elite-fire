@@ -16,6 +16,7 @@
 @import "./sections/_get-catalog-section/get-catalog-section";
 @import "./sections/_solution-section/solution-section";
 @import "./sections/_reasons-section/reasons-section";
+@import "./sections/_create-section/create-section";
 
 @import "./sections/footer";
 
@@ -33,25 +34,27 @@
 .price-wrapper {
   font-family: $primary-font-family;
   font-weight: 300;
-  line-height: 40px;
+
 
   color: var(--colorOrange);
 
   &__label {
     font-size: 18px;
     letter-spacing: 0.10em;
+    // line-height: 40px;
   }
 
   &__price {
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.06em;
+    line-height: 40px;
   }
 }
 
 // .heading {
 //   font-family: $primary-font-family;
-  
+
 //   text-transform: uppercase;
 
 //   background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
@@ -127,6 +130,7 @@
   color: var(--colorBlack);
   background: radial-gradient(100% 65.98% at 100% 73.18%, #FFFFFF 0.31%, #FFE2A4 59.23%, #FFD47C 100%);
   box-shadow: 0px 0px 74px 48px rgba(255, 207, 122, 0.2);
+
   .widget__title {
     font-family: $secondary-font-family;
     font-weight: 700;
@@ -150,16 +154,16 @@
   }
 }
 
-.gallery {
+.images-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  
+
   position: relative;
 
-  .gallery-item {
+  &__item {
     min-width: 370px;
     min-height: 267px;
     object-fit: cover;
@@ -179,11 +183,12 @@
     font-weight: 400;
   }
 
-  &__list {  
+  &__list {
     &_columns {
       &_one {
         columns: 1;
       }
+
       &_two {
         columns: 2;
       }
@@ -199,32 +204,32 @@
 .footnote {
   position: relative;
 
-  &::before{
-    content:"";
-    position:absolute;
+  &::before {
+    content: "";
+    position: absolute;
     width: 80%;
     height: 140%;
     transform: skew(35deg);
-    border-top:1px solid var(--colorOrange);
-    border-right:1px solid var(--colorOrange);
+    border-top: 1px solid var(--colorOrange);
+    border-right: 1px solid var(--colorOrange);
     left: 10px;
-    bottom:-160%;
+    bottom: -160%;
   }
 }
 
 .blur {
   --blur: 50px;
---spread: 50px;
+  --spread: 50px;
 
---grad: transparent calc(var(--spread)), 
-    #fff calc(var(--spread) + var(--blur)), 
-    #fff calc(100% - (var(--spread) + var(--blur))), 
+  --grad: transparent calc(var(--spread)),
+    #fff calc(var(--spread) + var(--blur)),
+    #fff calc(100% - (var(--spread) + var(--blur))),
     transparent calc(100% - var(--spread));
 
-mask-image: 
-  linear-gradient(to right, var(--grad)),
-  linear-gradient(to bottom, var(--grad));
-mask-composite: intersect;
+  mask-image:
+    linear-gradient(to right, var(--grad)),
+    linear-gradient(to bottom, var(--grad));
+  mask-composite: intersect;
 }
 
 .lists-container {
@@ -232,9 +237,201 @@ mask-composite: intersect;
   &__list {
     margin-bottom: 50px;
   }
-    
+
 
   & :last-child {
     margin-bottom: 0px;
   }
 }
+
+//slider
+.slider {
+  position: relative;
+  &__label-from {
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+  }
+  &__label-to {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+  }
+
+  &__container {
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+  &__input {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 2px;
+    border-radius: none;
+    background: var(--colorOrange);
+    outline: none;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 2px;
+      border: none;
+      background: var(--colorOrange);
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 30px;
+      height: 30px;
+      border-radius: 2px;
+      border: none;
+      background: var(--colorOrange);
+      cursor: pointer;
+    }
+  }
+}
+
+//checkbox 
+
+.checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  font-weight: 500;
+  font-size: 14px;
+
+
+
+  & input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--colorTransparent);
+    border-radius: 2px;
+    border: 1px solid var(--colorOrange);
+    transition: background-color 0.2s;
+  }
+
+  &__checkmark:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & input:checked ~ &__checkmark:before {
+    content: "+";
+  }
+
+  &:hover input~&__checkmark {
+    background-color: var(--colorTransparent);
+  }
+
+  & input:checked~&__checkmark {
+    color: var(--colorBlack);
+    background-color: var(--colorBeige);
+  }
+}
+
+//gallery (consctructor)
+.carousel-gallery {
+  position: relative;
+  // margin: 0 40px;
+  padding-bottom: 20px;
+
+  width: 100%;
+  // height: 1px;
+
+  overflow: hidden;
+
+  &__images {
+    position: relative;
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    object-fit: cover;
+    /* Вписываем фотографию в область */
+  }
+
+  &__images img {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    transform: scale(0.8);
+  }
+
+  &__prev {
+    position: absolute;
+    top: 40%;
+    left: 1%;
+  }
+
+  &__next {
+    position: absolute;
+    top: 40%;
+    right: 1%;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+  }
+  
+  &__pagination span {
+  
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    background-color: var(--colorPaginationInactive);
+    cursor: pointer;
+  
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__pagination &__page_state_active {
+    background-color: var(--colorOrange);
+  }
+}
+
+//front value
+.front-value {
+  &__item {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    &_color {
+      &_red {
+        background-color: #B8542A;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
