@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "../css/normalize.css";
 @font-face {
   font-family: "Lab Grotesque";
@@ -31,25 +32,26 @@
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 body {
   font-family: "Lab Grotesque";
   font-weight: 400;
   color: white;
+  background-color: #111010;
   background-image: url(../img/bg-assets/bg.png);
 }
 
@@ -69,7 +71,11 @@ body {
   --colorBlack: #000000;
   --mainColorBlack: #121212;
   --colorGrey: #949494;
+  --colorDarkGrey: #1a1a19;
   --colorOrange: #FFCF7A;
+  --colorBeige: #ECCF94;
+  --colorTransparent: rgba(255, 255, 255, 0);
+  --colorPaginationInactive: #464239;
 }
 
 @font-face {
@@ -104,20 +110,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Lab Grotesque";
@@ -151,20 +157,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 @media only screen and (min-width: 900px) {
   .main-section__image {
@@ -176,45 +182,6 @@ body {
   .text-pointer {
     display: flex;
     align-items: center;
-  }
-  .qualities-section__body {
-    padding: 52px 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .qualities-section__info-block {
-    margin-left: 70px;
-  }
-  .carousel__controls {
-    position: absolute;
-    top: 20px;
-    right: 83px;
-  }
-  .news-section__body {
-    padding: 80px 0;
-    display: flex;
-    flex-direction: row;
-    row-gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  .news-section__info-wrapper {
-    text-align: start;
-    width: 45%;
-  }
-  .news-section__gallery-grid {
-    width: 54%;
-    max-width: 629px;
-  }
-  .news-section__info-block {
-    margin-bottom: 92px;
-  }
-  .footer__body {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 72px 87px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -230,53 +197,6 @@ body {
   }
   .text-pointer {
     display: none;
-  }
-  .product-section__title {
-    margin-bottom: 15px;
-  }
-  .qualities-section__body {
-    padding: 26px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .qualities-section__info-block {
-    margin: 0;
-  }
-  .carousel__controls {
-    min-width: 63px;
-    padding: 15px 0;
-    margin-left: auto;
-  }
-  .news-section__body {
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .news-section__info-wrapper {
-    width: 100%;
-    margin-top: 40px;
-    text-align: center;
-  }
-  .news-section__gallery-grid {
-    width: 100%;
-  }
-  .news-section__socials-block {
-    justify-content: center;
-    align-items: center;
-    margin: 40px;
-  }
-  .footer__body {
-    padding: 40px;
-    flex-direction: column;
-    justify-content: start;
-    row-gap: 25px;
-  }
-  .footer__column {
-    align-items: center;
   }
 }
 @media only screen and (min-width: 769px) {
@@ -295,9 +215,6 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
-  .header__logo {
-    margin-left: 50px;
-  }
   .nav__list {
     display: flex;
     flex-direction: column;
@@ -325,11 +242,10 @@ body {
     width: 100%;
     height: 40%;
     margin: 0;
-    padding: 85px 0 0 0;
+    padding: 85px 0 15px 0;
     z-index: -10;
     list-style: none;
-    background-color: var(--colorBeigeLight);
-    box-shadow: 1px 0px 6px var(--accentColorLightCrey);
+    background-color: var(--colorDarkGrey);
     transition: all 0.25s;
   }
 }
@@ -400,20 +316,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .header {
   width: 100%;
@@ -450,7 +366,15 @@ body {
   position: -webkit-sticky;
   top: 0;
   z-index: 100;
-  background-color: #1a1a19;
+  background-color: var(--colorDarkGrey);
+}
+.header_position_fixed {
+  margin: 0;
+  position: fixed;
+  position: -webkit-fixed;
+  top: 0;
+  z-index: 100;
+  background-color: var(--colorDarkGrey);
 }
 
 @font-face {
@@ -485,20 +409,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .main-section {
   position: relative;
@@ -614,20 +538,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .advantages-section__container {
   padding-top: 92px;
@@ -711,20 +635,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .refilling-section__container {
   padding: 0 15px 80px 15px;
@@ -864,20 +788,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .smart-section__container {
   padding: 0 15px 80px 15px;
@@ -907,7 +831,6 @@ body {
 }
 .smart-section__image {
   transform: scale(1.1);
-  border-radius: 300px;
   z-index: -1;
 }
 .smart-section__label {
@@ -936,25 +859,46 @@ body {
 }
 
 .details-section__container {
-  padding: 0 15px;
+  padding: 50px 15px;
   box-sizing: content-box;
+}
+.details-section__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(740px, auto) minmax(500px, auto);
+  grid-column-gap: 120px;
+  grid-row-gap: 120px;
+  grid-template-areas: "kit-wrapper size-wrapper" "finishing-wrapper accessories-wrapper";
+}
+.details-section__grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.details-section__kit-wrapper {
+  grid-area: kit-wrapper;
+  padding-top: 45px;
+}
+.details-section__size-wrapper {
+  grid-area: size-wrapper;
+}
+.details-section__finishing-wrapper {
+  grid-area: finishing-wrapper;
+}
+.details-section__accessories-wrapper {
+  grid-area: accessories-wrapper;
 }
 .details-section__title {
   font-size: 24px;
   line-height: 150%;
-  margin-bottom: 25px;
 }
 .details-section__image-wrapper {
   font-size: 14px;
   line-height: 193%;
 }
-.details-section__lists-container * {
-  margin-bottom: 50px;
+.details-section__caption {
+  margin-bottom: 30px;
 }
-.details-section__lists-container :not(:last-child) {
-  margin-bottom: 0px;
-}
-
 @font-face {
   font-family: "Lab Grotesque";
   src: local("Lab Grotesque Thin"), local("Lab-Grotesque-Thin"), url("../fonts/LabGrotesque/LabGrotesque-Thin.woff2") format("woff2"), url("../fonts/LabGrotesque/LabGrotesque-Thin.woff") format("woff"), url("../fonts/LabGrotesque/LabGrotesque-Thin.ttf") format("truetype");
@@ -987,20 +931,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .get-catalog-section__container {
   padding: 50px 15px;
@@ -1059,6 +1003,127 @@ body {
   text-align: center;
   margin-bottom: 45px;
 }
+
+.create-section__container {
+  padding: 50px 15px;
+  box-sizing: content-box;
+}
+.create-section__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.constructor {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(533px, auto));
+  grid-template-rows: minmax(375px, auto) minmax(60px, auto);
+  grid-column-gap: 80px;
+  grid-row-gap: 88px;
+}
+.constructor__title {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+}
+.constructor__title_size_s {
+  letter-spacing: 0.2em;
+  font-size: 10px;
+}
+.constructor__title_size_m {
+  letter-spacing: 0.135em;
+  font-size: 12px;
+}
+.constructor__carousel-gallery {
+  max-width: 330px;
+}
+.constructor__columns-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.constructor__columns-wrapper *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.constructor__column {
+  width: 40%;
+}
+.constructor__configuration-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.constructor__configuration-results {
+  display: flex;
+  position: relative;
+}
+.constructor__length-result-wrapper {
+  width: 45%;
+}
+.constructor__length-result-value {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+.constructor__total {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.constructor__price-wrapper {
+  width: 45%;
+}
+.constructor__button {
+  width: 45%;
+}
+
+.contact-section {
+  background-color: var(--mainColorBlack);
+}
+.contact-section__container {
+  padding: 93px 15px 70px 15px;
+  box-sizing: content-box;
+}
+.contact-section__title {
+  margin-bottom: 72px;
+}
+.contact-section__columns-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-section__column {
+  position: relative;
+  min-height: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-section__button {
+  width: 280px;
+}
+
+.contact-wrapper__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 257%;
+  color: var(--colorGrey);
+  margin-bottom: 3px;
+}
+.contact-wrapper__link {
+  height: 50%;
+  color: var(--colorWhite);
+}
+.contact-wrapper__link_size_m {
+  font-weight: 300;
+  line-height: 164%;
+  font-size: 22px;
+}
+.contact-wrapper__link_size_l {
+  font-weight: 250;
+  font-size: 36px;
+  line-height: 92%;
+}
+
 @font-face {
   font-family: "Lab Grotesque";
   src: local("Lab Grotesque Thin"), local("Lab-Grotesque-Thin"), url("../fonts/LabGrotesque/LabGrotesque-Thin.woff2") format("woff2"), url("../fonts/LabGrotesque/LabGrotesque-Thin.woff") format("woff"), url("../fonts/LabGrotesque/LabGrotesque-Thin.ttf") format("truetype");
@@ -1091,30 +1156,45 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .footer {
-  background-color: var(--accentColorDarkGray);
+  border-top: 1px solid #232323;
+  background-color: var(--mainColorBlack);
+}
+.footer__container {
+  padding: 15px;
+  box-sizing: content-box;
 }
 .footer__body {
   display: flex;
+  justify-content: space-between;
 }
 .footer__column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+}
+.footer__column *:not(:last-child) {
+  margin-right: 110px;
+}
+.footer__link {
+  line-height: 129%;
+  letter-spacing: 0.05em;
+  color: #6D6D6D;
 }
 
 .link {
@@ -1173,20 +1253,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .nav {
   position: relative;
@@ -1257,20 +1337,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 #menu__checkbox:checked ~ .menu__button > span {
   transform: rotate(45deg);
@@ -1294,8 +1374,8 @@ body {
 .menu__button {
   align-items: center;
   position: fixed;
-  top: 30px;
-  left: 15px;
+  top: 25px;
+  right: 15px;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -1306,7 +1386,7 @@ body {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: var(--accentColorLightCrey);
+  background-color: var(--colorOrange);
   transition-duration: 0.25s;
 }
 .menu__button > span::before {
@@ -1350,20 +1430,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .title {
   position: relative;
@@ -1427,20 +1507,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .description {
   font-family: 16px;
@@ -1481,20 +1561,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .dash {
   display: inline-block;
@@ -1541,24 +1621,22 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .button {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1570,12 +1648,12 @@ body {
   border-radius: 2px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: 0.25s;
-  color: var(--mainColorBlack);
 }
 .button__content {
   z-index: 4;
 }
 .button_color_orange {
+  color: var(--mainColorBlack);
   background-color: var(--colorOrange);
 }
 .button_color_orange:hover {
@@ -1603,6 +1681,13 @@ body {
   top: -150%;
   right: -20%;
   z-index: 1;
+}
+.button_color_transparent {
+  border: 2px solid var(--colorOrange);
+  color: var(--colorWhite);
+}
+.button_color_transparent:hover {
+  box-shadow: 0px 0px 50px 0px var(--colorOrange);
 }
 
 @font-face {
@@ -1637,20 +1722,20 @@ body {
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY";
-  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Scania Sans CY Headline";
   font-style: normal;
-  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
 }
 .logo__text {
   font-family: "Scania Sans CY Headline";
@@ -1665,10 +1750,74 @@ body {
   color: var(--colorOrange);
 }
 
+@font-face {
+  font-family: "Lab Grotesque";
+  src: local("Lab Grotesque Thin"), local("Lab-Grotesque-Thin"), url("../fonts/LabGrotesque/LabGrotesque-Thin.woff2") format("woff2"), url("../fonts/LabGrotesque/LabGrotesque-Thin.woff") format("woff"), url("../fonts/LabGrotesque/LabGrotesque-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: local("Lab Grotesque Light"), local("Lab-Grotesque-Light"), url("../fonts/LabGrotesque/LabGrotesque-Light.woff2") format("woff2"), url("../fonts/LabGrotesque/LabGrotesque-Light.woff") format("woff"), url("../fonts/LabGrotesque/LabGrotesque-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: local("Lab Grotesque Regular"), local("Lab-Grotesque-Regular"), url("../fonts/LabGrotesque/LabGrotesque-Regular.woff2") format("woff2"), url("../fonts/LabGrotesque/LabGrotesque-Regular.woff") format("woff"), url("../fonts/LabGrotesque/LabGrotesque-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: local("Lab Grotesque Medium"), local("Lab-Grotesque-Medium"), url("../fonts/LabGrotesque/LabGrotesque-Medium.woff2") format("woff2"), url("../fonts/LabGrotesque/LabGrotesque-Medium.woff") format("woff"), url("../fonts/LabGrotesque/LabGrotesque-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: local("Lab Grotesque Bold"), local("Lab-Grotesque-Bold"), url("../fonts/LabGrotesque/LabGrotesque-Bold.woff2") format("woff2"), url("../fonts/LabGrotesque/LabGrotesque-Bold.woff") format("woff"), url("../fonts/LabGrotesque/LabGrotesque-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Scania Sans CY";
+  src: local("Scania Sans CY  Regular"), local("Scania-Sans-CY--Regular"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Scania Sans CY";
+  src: local("Scania Sans CY  Bold"), local("Scania-Sans-CY--Bold"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff2") format("woff2"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.woff") format("woff"), url("../fonts/ScaniaSansCY/ScaniaSansCY-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Scania Sans CY Headline";
+  font-style: normal;
+  src: url("../fonts/ScaniaSansCYHeadline/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+}
+.carousel {
+  position: relative;
+  max-width: 537px;
+  min-height: 346px;
+  background-color: var(--colorBlack);
+}
+.carousel__controls {
+  width: 63px;
+  position: absolute;
+  left: 7%;
+  bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel__controls :not(:last-child) {
+  margin-right: 16px;
+}
+
 .price-wrapper {
   font-family: "Lab Grotesque";
   font-weight: 300;
-  line-height: 40px;
   color: var(--colorOrange);
 }
 .price-wrapper__label {
@@ -1679,6 +1828,7 @@ body {
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.06em;
+  line-height: 40px;
 }
 
 .advantage-item {
@@ -1752,7 +1902,7 @@ body {
   line-height: 140%;
 }
 
-.gallery {
+.images-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1760,7 +1910,7 @@ body {
   width: 100%;
   position: relative;
 }
-.gallery .gallery-item {
+.images-list__item {
   min-width: 370px;
   min-height: 267px;
   -o-object-fit: cover;
@@ -1794,11 +1944,184 @@ body {
 .footnote::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: skew(30deg);
+  width: 80%;
+  height: 140%;
+  transform: skew(35deg);
   border-top: 1px solid var(--colorOrange);
   border-right: 1px solid var(--colorOrange);
-  left: -25px;
-  bottom: -100%;
+  left: 10px;
+  bottom: -160%;
+}
+
+.blur {
+  --blur: 50px;
+  --spread: 50px;
+  --grad: transparent calc(var(--spread)),
+    #fff calc(var(--spread) + var(--blur)),
+    #fff calc(100% - (var(--spread) + var(--blur))),
+    transparent calc(100% - var(--spread));
+  -webkit-mask-image: linear-gradient(to right, var(--grad)), linear-gradient(to bottom, var(--grad));
+          mask-image: linear-gradient(to right, var(--grad)), linear-gradient(to bottom, var(--grad));
+  -webkit-mask-composite: source-in, xor;
+          mask-composite: intersect;
+}
+
+.lists-container__list {
+  margin-bottom: 50px;
+}
+.lists-container :last-child {
+  margin-bottom: 0px;
+}
+
+.slider {
+  position: relative;
+}
+.slider__label-from {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+}
+.slider__label-to {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+.slider__container {
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.slider__input {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 2px;
+  border-radius: none;
+  background: var(--colorOrange);
+  outline: none;
+}
+.slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  background: var(--colorOrange);
+  cursor: pointer;
+}
+.slider__input::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  background: var(--colorOrange);
+  cursor: pointer;
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox__checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--colorTransparent);
+  border-radius: 2px;
+  border: 1px solid var(--colorOrange);
+  transition: background-color 0.2s;
+}
+.checkbox__checkmark:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.checkbox input:checked ~ .checkbox__checkmark:before {
+  content: "+";
+}
+.checkbox:hover input ~ .checkbox__checkmark {
+  background-color: var(--colorTransparent);
+}
+.checkbox input:checked ~ .checkbox__checkmark {
+  color: var(--colorBlack);
+  background-color: var(--colorBeige);
+}
+
+.carousel-gallery {
+  position: relative;
+  padding-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-gallery__images {
+  position: relative;
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Вписываем фотографию в область */
+}
+.carousel-gallery__images img {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  transform: scale(0.8);
+}
+.carousel-gallery__prev {
+  position: absolute;
+  top: 40%;
+  left: 1%;
+}
+.carousel-gallery__next {
+  position: absolute;
+  top: 40%;
+  right: 1%;
+}
+.carousel-gallery__pagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+.carousel-gallery__pagination span {
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background-color: var(--colorPaginationInactive);
+  cursor: pointer;
+}
+.carousel-gallery__pagination span:not(:last-child) {
+  margin-right: 10px;
+}
+.carousel-gallery__pagination .carousel-gallery__page_state_active {
+  background-color: var(--colorOrange);
+}
+
+.front-value__item {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.front-value__item_color_red {
+  background-color: #B8542A;
 }

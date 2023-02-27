@@ -1,0 +1,32 @@
+@import "../../var";
+
+.footer {
+  border-top: 1px solid #232323;;
+  background-color: var(--mainColorBlack);
+
+  &__container {
+    padding: $container-padding;
+    box-sizing: content-box;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & *:not(:last-child) {
+      margin-right: 110px;
+    }
+  }
+
+  &__link {
+    line-height: 129%;
+    letter-spacing: 0.05em;
+    color: #6D6D6D;
+  }
+}

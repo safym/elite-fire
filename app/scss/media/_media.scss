@@ -17,14 +17,14 @@
     align-items: center;
   }
 
-  //footer 
-  .footer {
-    &__body {      
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 72px 87px;
-    }
-  }
+  // //footer 
+  // .footer {
+  //   &__body {      
+  //     flex-direction: row;
+  //     justify-content: space-between;
+  //     padding: 72px 87px;
+  //   }
+  // }
 }
 
 //--tablet/mobile section (row section to column) 
@@ -48,19 +48,19 @@
     display: none;
   }
 
-  //footer 
-  .footer {
-    &__body {
-      padding: 40px;
-      flex-direction: column;
-      justify-content: start;
-      row-gap: 25px;
-    }
+  // //footer 
+  // .footer {
+  //   &__body {
+  //     padding: 40px;
+  //     flex-direction: column;
+  //     justify-content: start;
+  //     row-gap: 25px;
+  //   }
 
-    &__column {
-      align-items: center;
-    }
-  }
+  //   &__column {
+  //     align-items: center;
+  //   }
+  // }
 }
 
 // decktop/tablet header (burger menu off)
