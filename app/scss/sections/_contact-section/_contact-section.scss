@@ -45,7 +45,7 @@
   &__link {
     height: 50%;
 
-    color: var(--colorWhite);
+
 
     &_size {
       &_m {
@@ -58,6 +58,14 @@
         font-weight: 250;
         font-size: 36px;
         line-height: 92%;
+      }
+    }
+    &_color {
+      &_white {
+        color: var(--colorWhite);
+      }
+      &_orange {
+        color: var(--colorOrange);
       }
     }
   }
