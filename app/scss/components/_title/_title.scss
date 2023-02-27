@@ -1,15 +1,10 @@
-@import "../../var";
-
 .title {
   position: relative;
-
-  font-family: $primary-font-family;
-
   text-transform: uppercase;
 
   &_fill {
     &_gradient {
-      background: linear-gradient(240.22deg, #FFFFFF 31.8%, rgba(255, 255, 255, 0.1) 87.73%);
+      background: linear-gradient(240.22deg, var(--primaryTextColor) 31.8%, rgba(255, 255, 255, 0.1) 87.73%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -18,7 +13,7 @@
 
     &_color {
       font-weight: 300;
-      color: var(--colorWhite);
+      color: var(--primaryTextColor);
     }
   }
 
@@ -34,7 +29,6 @@
       font-size: 64px;
       line-height: 125%;
       letter-spacing: 0.05em;
-      line-height: 125%;
     }
   }
 }

@@ -1,5 +1,3 @@
-@import "../../var";
-
 .main-section {
   position: relative;
   padding-top: 75px;
@@ -43,11 +41,11 @@
   }
 
   &__header-wrapper {
-    margin-bottom: 29px;
+    margin-bottom: $margin-3x;
   }
 
   &__price-wrapper {
-    margin-bottom: 86px;
+    margin-bottom: $margin-8x;
   }
 
   &__advantages-wrapper {
@@ -55,11 +53,14 @@
   }
 
   &__advantage-item {
-    max-width: 130px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 120px;
     font-size: 14px;
 
     &:not(:last-child) {
-      margin-right: 80px;
+      margin-right: $margin-4x;
     }
   }
 
@@ -104,7 +105,9 @@
       filter: blur(300px);
       border-radius: 50%;
 
-      animation: scale-m 1.5s alternate infinite ease-in-out;
+      -webkit-animation: scale-m 1.5s alternate infinite ease-in-out;
+
+              animation: scale-m 1.5s alternate infinite ease-in-out;
       z-index: $bg-shadow-z-index;
     }
   }

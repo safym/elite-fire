@@ -1,19 +1,19 @@
-@import "./var";
+html {scroll-behavior: smooth;}
 
 body {
   font-family: $primary-font-family;
   font-weight: $primary-font-weight;
   
-  color: white;
+  color: var(--primaryTextColor);
 
-  background-color:  #111010;
+  background-color:  var(--colorSecondary-dkr);
   background-image: url(../img/bg-assets/bg.png);
 }
 
 ._container {
   max-width: $container-width;
   margin: 0 auto;
-  // border: 1px solid blue;
+  scroll-behavior: smooth;
 }
 
 .content {

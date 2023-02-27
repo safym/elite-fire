@@ -91,12 +91,31 @@ $title-font-size: 32px;
 
 $header-height: 50px;
 $container-width: 1194px;
-$container-padding: 15px;
 
 $bg-shadows-opacity: 30%;
 
 $bg-shadow-z-index: -1;
 $image-z-index: 2;
 $block-z-index: 3;
+$header-z-index: 100;
+$menu-z-index: -10;
 
 $bg-shadow-color-black: #000000;
+
+//margin/padding var
+$container-padding: 15px;
+
+$spacing-unit: 10px;  
+
+$padding: $spacing-unit;
+$margin: $spacing-unit;
+
+$margin-2x: 2 * $margin;
+$margin-3x: 3 * $margin;
+$margin-4x: 4 * $margin;
+$margin-5x: 5 * $margin;
+$margin-7x: 7 * $margin;
+$margin-8x: 8 * $margin;
+
+
+

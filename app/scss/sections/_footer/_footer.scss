@@ -1,8 +1,6 @@
-@import "../../var";
-
 .footer {
-  border-top: 1px solid #232323;;
-  background-color: var(--mainColorBlack);
+  border-top: 1px solid var(--colorSecondary-dk);
+  background-color: var(--colorSecondary-dkr);
 
   &__container {
     padding: $container-padding;
@@ -18,15 +16,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 50%;
 
-    & *:not(:last-child) {
-      margin-right: 110px;
+    &_position {
+      &_left {
+        justify-content: space-between;
+      }
+      &_right {
+        justify-content: end;
+      }
     }
   }
 
   &__link {
     line-height: 129%;
     letter-spacing: 0.05em;
-    color: #6D6D6D;
+    flex: end;
+    color: var(--colorSecondary-ltr)
   }
 }

@@ -1,37 +1,30 @@
-@import "../../var";
-
 .button {
-
+  padding: $container-padding;
 
   position: relative;
   overflow: hidden;
 
   display: flex;
-  padding: 15px;
   justify-content: center;
   align-items: center;
 
   font-weight: $primary-font-weight;
-  // line-height: 147%;
-
   text-align: center;
 
   border-radius: 2px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-  transition: 0.25s;
-
-
+  transition: all 0.25s;
   &__content {
     z-index: 4;
   }
   &_color {
     &_orange {
-      color: var(--mainColorBlack);
-      background-color: var(--colorOrange);
+      color: var(--colorSecondary-dkr);
+      background-color: var(--colorPrimary);
 
       &:hover {
-        box-shadow: 0px 0px 50px 0px var(--colorOrange);
+        box-shadow: 0px 0px 50px 0px var(--colorPrimary);
       }
 
       &::before {
@@ -64,10 +57,10 @@
     }
 
     &_transparent {
-      border: 2px solid var(--colorOrange);
-      color: var(--colorWhite);
+      border: 2px solid var(--colorPrimary);
+      color: var(--primaryTextColor);
       &:hover {
-        box-shadow: 0px 0px 50px 0px var(--colorOrange);
+        box-shadow: 0px 0px 50px 0px var(--colorPrimary);
       }
     }
   }

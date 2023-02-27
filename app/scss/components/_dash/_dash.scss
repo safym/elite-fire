@@ -1,11 +1,9 @@
-@import "../../var";
-
 .dash {
   display: inline-block;
   vertical-align:super;
 
   height: 1px;
-  background-color: var(--colorGrey);
+  background-color: var(--colorSecondary);
 
   &_width {
     &_short {

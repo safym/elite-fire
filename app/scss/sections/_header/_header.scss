@@ -1,8 +1,6 @@
-@import "../../var";
-
 .header {
   width: 100%;
-  margin-top: 70px;
+  margin-top: $margin-7x;
 
   transition: background-color 0.2s ease;
   &__container {
@@ -23,18 +21,16 @@
     align-items: center;
 
     & *:not(:last-child) {
-      margin-right: 39px;
+      margin-right: $margin-4x;
     }
   }
   &__slogan {
     max-width: 100px;
-    
-    font-family: $primary-font-family;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.05em;
 
-    color: #6D6D6D;
+    color: var(--colorSecondary-ltr);
   }
 
   &_position {
@@ -43,8 +39,8 @@
       position: -webkit-sticky; 
       top: 0;
 
-      z-index: 100;
-      background-color: var(--colorDarkGrey);
+      z-index: $header-z-index;
+      background-color: var(--colorSecondary-dkr);
     }
     &_fixed {
        margin: 0;
@@ -53,8 +49,8 @@
       position: -webkit-fixed; 
       top: 0;
   
-      z-index: 100;
-      background-color: var(--colorDarkGrey);
+      z-index: $header-z-index;
+      background-color: var(--colorSecondary-dkr);
     }
   }
 }

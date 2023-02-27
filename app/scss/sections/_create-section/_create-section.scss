@@ -14,8 +14,6 @@
   &__constructor-wrapper {}
 }
 
-
-
 ///////////
 .constructor {
   display: grid;
@@ -23,6 +21,38 @@
   grid-template-rows: minmax(375px, auto) minmax(60px, auto);
   grid-column-gap: 80px;
   grid-row-gap: 88px;
+
+  grid-template-areas: 
+    "photo config"
+    "result total";
+ 
+
+  &__photo-wrapper {
+    grid-area: photo;
+  }
+
+  &__configuration-wrapper {
+    grid-area: config;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__configuration-results {
+    grid-area: result;
+    
+    display: flex;
+    position: relative;
+  }
+
+  &__total {
+    grid-area: total;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
 
   &__title {
     font-weight: 500;
@@ -62,16 +92,8 @@
     width: 40%;
   }
 
-  &__configuration-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 
-  &__configuration-results {
-    display: flex;
-    position: relative;
-  }
+
 
   &__length-result-wrapper {
     width: 45%;

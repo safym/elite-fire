@@ -1,5 +1,3 @@
-@import "../../var";
-
 .get-catalog-section {
   &__container {
     padding: 50px $container-padding;
@@ -17,8 +15,7 @@
   }
 
   &__title {
-    font-family: $primary-font-family;
-    font-weight: 300;
+    font-weight: $secondary-font-weight;
     font-size: 30px;
     line-height: 147%;
     text-align: center;
@@ -30,7 +27,7 @@
     font-weight: $tertiary-font-weight;
     font-size: 18px;
     text-align: center;
-    color: var(--mainColorBlack);
+    color: var(--colorSecondary-dkr);
     animation: scale-s 1s alternate infinite ease-in-out;
   }
 }

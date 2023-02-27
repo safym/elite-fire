@@ -1,5 +1,3 @@
-@import "../../var";
-
 #menu {
   &__checkbox:checked~.menu__button>span {
     transform: rotate(45deg);
@@ -43,7 +41,7 @@
     width: 100%;
     height: 2px;
 
-    background-color: var(--colorOrange);
+    background-color: var(--colorPrimary);
 
     transition-duration: .25s;
   }

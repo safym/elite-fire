@@ -1,8 +1,9 @@
 @import "../css/normalize.css";
+@import "./var";
 @import "../scss/main";
 
 @import "./root";
-@import "./var";
+
 
 @import "./media/media";
 @import "./_animations/animation";
@@ -33,16 +34,12 @@
 
 //_price-wrapper 
 .price-wrapper {
-  font-family: $primary-font-family;
-  font-weight: 300;
-
-
-  color: var(--colorOrange);
+  font-weight: $secondary-font-weight;
+  color: var(--colorPrimary);
 
   &__label {
     font-size: 18px;
     letter-spacing: 0.10em;
-    // line-height: 40px;
   }
 
   &__price {
@@ -53,24 +50,11 @@
   }
 }
 
-// .heading {
-//   font-family: $primary-font-family;
-
-//   text-transform: uppercase;
-
-//   background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-clip: text;
-//   text-fill-color: transparent;
-// }
-
 .advantage-item {
   display: flex;
 
   &__text {
     display: inline;
-    font-family: $primary-font-family;
     line-height: 157%;
 
     &_align {
@@ -100,7 +84,7 @@
       text-align: center;
 
       & *:not(:last-child) {
-        margin-right: 30px;
+        margin-right: $margin-3x;
       }
     }
 
@@ -110,7 +94,7 @@
       text-align: center;
 
       & *:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: $margin;
       }
     }
   }
@@ -127,29 +111,26 @@
   justify-content: space-around;
   text-align: center;
 
+  font-family: $secondary-font-family;
+
   border-radius: 50%;
   color: var(--colorBlack);
   background: radial-gradient(100% 65.98% at 100% 73.18%, #FFFFFF 0.31%, #FFE2A4 59.23%, #FFD47C 100%);
   box-shadow: 0px 0px 74px 48px rgba(255, 207, 122, 0.2);
 
   .widget__title {
-    font-family: $secondary-font-family;
     font-weight: 700;
     font-size: 35px;
     line-height: 42%;
   }
 
   .widget__subtitle {
-    font-family: $secondary-font-family;
     font-weight: 700;
-    font-size: 14px;
+    font-size: $secondary-font-size;
     line-height: 42%;
   }
 
   .widget__description {
-    font-family: $secondary-font-family;
-
-    font-weight: 400;
     font-size: 10px;
     line-height: 140%;
   }
@@ -167,6 +148,7 @@
   &__item {
     min-width: 370px;
     min-height: 267px;
+    -o-object-fit: cover;
     object-fit: cover;
 
     background-color: var(--colorBlack);
@@ -176,9 +158,9 @@
 .list-wrapper {
 
   &__title {
-    margin-bottom: 10px;
+    margin-bottom: $margin;
 
-    color: #757575;
+    color: var(--colorSecondary-lt);
     font-size: 18px;
     line-height: 193%;
     font-weight: 400;
@@ -187,10 +169,12 @@
   &__list {
     &_columns {
       &_one {
+        -moz-columns: 1;
         columns: 1;
       }
 
-      &_two {
+      &_two { 
+        -moz-columns: 2;
         columns: 2;
       }
     }
@@ -198,7 +182,7 @@
 
   &__item {
     line-height: 193%;
-    font-size: 14px;
+    font-size: $secondary-font-size;
   }
 }
 
@@ -211,34 +195,38 @@
     width: 80%;
     height: 140%;
     transform: skew(35deg);
-    border-top: 1px solid var(--colorOrange);
-    border-right: 1px solid var(--colorOrange);
+    border-top: 1px solid var(--colorPrimary);
+    border-right: 1px solid var(--colorPrimary);
     left: 10px;
     bottom: -160%;
   }
 }
 
 .blur {
-  --blur: 50px;
-  --spread: 50px;
+  $blur: 50px;
+  $spread: 50px;
 
-  --grad: transparent calc(var(--spread)),
-    #fff calc(var(--spread) + var(--blur)),
-    #fff calc(100% - (var(--spread) + var(--blur))),
-    transparent calc(100% - var(--spread));
+  $grad: transparent $spread,
+    #fff calc($spread + $blur),
+    #fff calc(100% - ($spread + $blur)),
+    transparent calc(100% - $spread);
 
   mask-image:
-    linear-gradient(to right, var(--grad)),
-    linear-gradient(to bottom, var(--grad));
+    linear-gradient(to right, $grad),
+    linear-gradient(to bottom, $grad);
+
+  -webkit-mask-image:
+    linear-gradient(to right, $grad),
+    linear-gradient(to bottom, $grad);
+
+  -webkit-mask-composite: source-in, xor;
   mask-composite: intersect;
 }
 
 .lists-container {
-
   &__list {
-    margin-bottom: 50px;
+    margin-bottom: $margin-5x;
   }
-
 
   & :last-child {
     margin-bottom: 0px;
@@ -247,16 +235,21 @@
 
 //slider
 .slider {
+  $pos-top: 0;
+  $pos-bottom: 10%;
+
   position: relative;
+
   &__label-from {
     position: absolute;
-    left: 0;
-    bottom: 10%;
+    left: $pos-top;
+    bottom: $pos-bottom;
   }
+
   &__label-to {
     position: absolute;
-    right: 0;
-    bottom: 10%;
+    right: $pos-top;
+    bottom: $pos-bottom;
   }
 
   &__container {
@@ -265,23 +258,23 @@
     align-items: center;
     height: 30px;
   }
+
   &__input {
     width: 100%;
     -webkit-appearance: none;
     height: 2px;
-    border-radius: none;
-    background: var(--colorOrange);
-    outline: none;
+
+    background: var(--colorPrimary);
 
     &::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
       width: 30px;
       height: 30px;
+      
+      -webkit-appearance: none;
+      appearance: none;
       border-radius: 2px;
       border: none;
-      background: var(--colorOrange);
-      cursor: pointer;
+      background: var(--colorPrimary);
     }
 
     &::-moz-range-thumb {
@@ -289,8 +282,7 @@
       height: 30px;
       border-radius: 2px;
       border: none;
-      background: var(--colorOrange);
-      cursor: pointer;
+      background: var(--colorPrimary);
     }
   }
 }
@@ -301,17 +293,20 @@
   display: block;
   position: relative;
   cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: $secondary-font-size;
 
 
 
   & input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
   }
 
   &__checkmark {
@@ -320,9 +315,9 @@
     right: 0;
     height: 20px;
     width: 20px;
-    background-color: var(--colorTransparent);
+    background-color: transparent;
     border-radius: 2px;
-    border: 1px solid var(--colorOrange);
+    border: 1px solid var(--colorPrimary);
     transition: background-color 0.2s;
   }
 
@@ -335,25 +330,33 @@
     transform: translate(-50%, -50%);
   }
 
-  & input:checked ~ &__checkmark:before {
+  & input:checked~&__checkmark:before {
     content: "+";
   }
 
   &:hover input~&__checkmark {
-    background-color: var(--colorTransparent);
+    background-color: transparent;
   }
 
   & input:checked~&__checkmark {
     color: var(--colorBlack);
-    background-color: var(--colorBeige);
+    background-color: var(--colorPrimary-lt);
   }
 }
 
 //gallery (consctructor)
 .carousel-gallery {
+  $pos-bottom: 10%;
+
+  $pos-controls-y: 35%;
+  $pos-controls-x: 1%;
+
+  $pos-pagination-y: 0;
+  $pos-pagination-x: 40%;
+
   position: relative;
-  // margin: 0 40px;
-  padding-bottom: 20px;
+
+  padding-bottom: 10px;
 
   width: 100%;
   // height: 1px;
@@ -366,8 +369,8 @@
     width: 400%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
+    -o-object-fit: cover;
     object-fit: cover;
-    /* Вписываем фотографию в область */
   }
 
   &__images img {
@@ -379,60 +382,56 @@
 
   &__prev {
     position: absolute;
-    top: 40%;
-    left: 1%;
+    top: $pos-controls-y;
+    left: $pos-controls-x;
   }
 
   &__next {
     position: absolute;
-    top: 40%;
-    right: 1%;
+    top: $pos-controls-y;
+    right: $pos-controls-x;
   }
 
   &__pagination {
     display: flex;
     justify-content: center;
-  
+
     position: absolute;
-    bottom: 0;
-    left: 40%;
+    bottom: $pos-pagination-y;
+    left: $pos-pagination-x;
   }
-  
+
   &__pagination span {
-  
+
     display: inline-block;
     width: 10px;
     height: 2px;
     background-color: var(--colorPaginationInactive);
     cursor: pointer;
-  
+
     &:not(:last-child) {
       margin-right: 10px;
     }
   }
 
   &__pagination &__page_state_active {
-    background-color: var(--colorOrange);
+    background-color: var(--colorPaginationActive);
   }
 }
 
 //front value
 .front-value {
   &__item {
-    width: 28px;
-    height: 28px;
+    $size: 28px;
+
+    width: $size;
+    height: $size;
     border-radius: 50%;
+
     &_color {
       &_red {
-        background-color: #B8542A;
+        background-color: var(--colorPrimary-dk);
       }
     }
   }
 }
-
-
-
-
-
-
-

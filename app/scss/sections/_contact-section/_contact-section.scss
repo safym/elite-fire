@@ -1,5 +1,5 @@
 .contact-section {
-  background-color: var(--mainColorBlack);
+  background-color: var(--colorSecondary-dkr);
   &__container {
     padding: 93px $container-padding 70px  $container-padding;
     box-sizing: content-box;
@@ -38,14 +38,25 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 257%;
-    color: var(--colorGrey);
+    color: var(--colorSecondary);
     margin-bottom: 3px;
   }
 
   &__link {
     height: 50%;
+    transition: 0.25s;
+    color: var(--primaryTextColor);
 
-
+    &:hover {
+      color: var(--colorPrimary);
+      background-color: transparent;
+      text-decoration: none;
+    }
+    &:active {
+      color: var(--colorPrimary);
+      background-color: transparent;
+      text-decoration: none;
+    }
 
     &_size {
       &_m {
@@ -58,14 +69,6 @@
         font-weight: 250;
         font-size: 36px;
         line-height: 92%;
-      }
-    }
-    &_color {
-      &_white {
-        color: var(--colorWhite);
-      }
-      &_orange {
-        color: var(--colorOrange);
       }
     }
   }
