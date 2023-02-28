@@ -1,0 +1,9 @@
+.lists-container {
+  &__list {
+    margin-bottom: $margin-5x;
+  }
+
+  & :last-child {
+    margin-bottom: 0px;
+  }
+}

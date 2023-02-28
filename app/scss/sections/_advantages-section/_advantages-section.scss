@@ -1,7 +1,6 @@
 .advantages-section {
   &__container {
-    padding-top: 92px;
-    padding-bottom: 130px;
+    box-sizing: content-box;
   }
 
   &__body {
@@ -13,8 +12,7 @@
 
   &__title {
     max-width: 700px;
-    
-    margin-bottom: 21px;
+    margin-bottom: $margin-2x;
 
     text-align: center;
   }
@@ -22,7 +20,6 @@
   &__description {
     max-width: 550px;
     text-align: center;
-    font-size: 20px;
     line-height: 165%;
     text-align: center;
     letter-spacing: 0.03em;
@@ -43,12 +40,12 @@
     top: -55%;
     left: 0;
     z-index: $bg-shadow-z-index;
+    -webkit-animation: scale-m 2s alternate infinite ease-in-out;
     animation: scale-m 2s alternate infinite ease-in-out;
   }
 
   &__advantages-wrapper {
     margin-top: 15px;
-    padding: 0 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -56,6 +53,6 @@
 
   &__advantage-item {
     font-size: 16px;
-    max-width: 255px;
+    max-width: 262px;
   }
 }

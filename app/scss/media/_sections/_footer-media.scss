@@ -1,0 +1,40 @@
+//--desktop
+@media only screen and (min-width: 900px) {
+  .footer {
+    &__body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__column {
+      width: 50%;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+//--tablet/mobile
+@media only screen and (max-width: 900px) {
+  .footer {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__column {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      & :not(:last-child) {
+        margin-bottom: $margin-2x;
+      }
+    }
+  }
+}

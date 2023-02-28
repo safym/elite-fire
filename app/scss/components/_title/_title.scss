@@ -12,21 +12,22 @@
     }
 
     &_color {
-      font-weight: 300;
+      font-weight: $secondary-font-weight;
       color: var(--primaryTextColor);
     }
   }
 
   &_size {
     &_m {
-      font-size: 40px;
-      font-weight: 250;
+      // font-size: $title-font-size-m;
+      font-weight: $quaternary-font-weight;
       line-height: 150%;
       letter-spacing: 0.07em;
     }
+
     &_l {
-      font-weight: 250;
-      font-size: 64px;
+      // font-size: $title-font-size-l;
+      font-weight: $quaternary-font-weight;
       line-height: 125%;
       letter-spacing: 0.05em;
     }

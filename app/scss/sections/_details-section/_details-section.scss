@@ -1,47 +1,31 @@
 .details-section {
   &__container {
-    padding: 50px $container-padding;
+    padding: $padding-5x $container-padding;
     box-sizing: content-box;
   }
 
-  &__body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(740px, auto)  minmax(500px, auto);
-    grid-column-gap: 120px;
-    grid-row-gap: 120px;
+  &__kit-wrapper {
+    grid-area: kit-wrapper;
+    padding-top: $padding-4x;
+  }
 
-    grid-template-areas: 
-      "kit-wrapper size-wrapper"
-      "finishing-wrapper accessories-wrapper";
+  &__size-wrapper {
+    grid-area: size-wrapper;
+  }
+
+  &__finishing-wrapper {
+    grid-area: finishing-wrapper;
+  }
+
+  &__accessories-wrapper {
+    grid-area: accessories-wrapper;
   }
 
   &__grid-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
-
-  &__kit-wrapper {
-    grid-area: kit-wrapper;
-    padding-top: 45px;
-  }
-  
-  &__size-wrapper {
-    grid-area: size-wrapper;
-  }
-  
-  &__finishing-wrapper {
-    grid-area: finishing-wrapper;
-  }
-  
-  &__accessories-wrapper {
-    grid-area: accessories-wrapper;
-  }
-
-
-
-  &__header {}
 
   &__title {
     font-size: 24px;
@@ -49,14 +33,19 @@
   }
 
   &__image-wrapper {
-    font-size: 14px;
     line-height: 193%;
+    position: relative;
+  }
+
+  &__bg-shadow {
+    opacity: $bg-shadows-opacity-2x;
+    position: absolute;
+    bottom: -100%;
+    right: 0%;
+    z-index: $bg-shadow-z-index;
   }
 
   &__caption {
-    margin-bottom: 30px;
+    margin-bottom: $margin-3x;
   }
-
-  &__label {}
 }
-

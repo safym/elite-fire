@@ -1,0 +1,36 @@
+.widget {
+  $size: 151px;
+
+  width: $size;
+  height: $size;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  font-family: $secondary-font-family;
+
+  border-radius: 50%;
+  color: var(--colorBlack);
+  background: radial-gradient(100% 65.98% at 100% 73.18%, #FFFFFF 0.31%, #FFE2A4 59.23%, #FFD47C 100%);
+  box-shadow: 0px 0px 74px 48px rgba(255, 207, 122, 0.2);
+
+  .widget__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42%;
+  }
+
+  .widget__subtitle {
+    font-weight: 700;
+    line-height: 42%;
+  }
+
+  .widget__description {
+    font-size: 10px;
+    line-height: 140%;
+  }
+}

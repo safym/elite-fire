@@ -1,4 +1,5 @@
 .footer {
+  overflow-y: hidden;
   border-top: 1px solid var(--colorSecondary-dk);
   background-color: var(--colorSecondary-dkr);
 
@@ -14,14 +15,12 @@
 
   &__column {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 50%;
 
     &_position {
       &_left {
         justify-content: space-between;
       }
+
       &_right {
         justify-content: end;
       }

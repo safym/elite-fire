@@ -1,0 +1,24 @@
+//--desktop
+@media only screen and (min-width: 900px) {
+  .contact-section {
+    &__columns-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+//--tablet/mobile
+@media only screen and (max-width: 900px) {
+  .contact-section {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__columns-wrapper {
+      flex-direction: column;
+    }
+  }
+}

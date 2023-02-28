@@ -1,0 +1,40 @@
+.contact-wrapper {
+  &__title {
+    font-weight: $secondary-font-weight;
+    line-height: 257%;
+    color: var(--colorSecondary);
+    margin-bottom: 3px;
+  }
+
+  &__link {
+    height: 50%;
+    transition: 0.25s;
+    color: var(--primaryTextColor);
+
+    &:hover {
+      color: var(--colorPrimary);
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: var(--colorPrimary);
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    &_size {
+      &_m {
+        font-weight: $secondary-font-weight;
+        line-height: 164%;
+        font-size: 22px;
+      }
+
+      &_l {
+        font-weight: $quaternary-font-weight;
+        font-size: 36px;
+        line-height: 92%;
+      }
+    }
+  }
+}

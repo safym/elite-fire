@@ -1,43 +1,19 @@
 .main-section {
   position: relative;
-  padding-top: 75px;
-
-
-  &::before {
-    content: "";
-    position: absolute;
-    opacity: $bg-shadows-opacity;
-    background: $bg-shadow-color-black;
-    -webkit-filter: blur(300px);
-    filter: blur(300px);
-    border-radius: 300px;
-    transform: rotate(45deg);
-    z-index: $bg-shadow-z-index;
-
-    width: 874.92px;
-    height: 927.64px;
-  }
+  padding-top: $padding-7x;
 
   &__container {
     position: relative;
-
-    padding: 0 $container-padding 126px $container-padding;
     box-sizing: content-box;
   }
 
   &__body {
     max-width: 780px;
-
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
 
     z-index: $block-z-index;
-  }
-
-  &__title {
-
   }
 
   &__header-wrapper {
@@ -57,58 +33,53 @@
     width: -moz-fit-content;
     width: fit-content;
     max-width: 120px;
-    font-size: 14px;
 
     &:not(:last-child) {
-      margin-right: $margin-4x;
+      margin-right: $margin-6x;
     }
+  }
+
+  &__bg-image-fire {
+    position: absolute;
+    top: -30%;
+    right: 5%;
+
+    opacity: $bg-shadows-opacity;
+    z-index: $bg-shadow-z-index;
+
+    -webkit-animation: scale-m 1.5s alternate infinite ease-in-out;
+    animation: scale-m 1.5s alternate infinite ease-in-out;
+  }
+
+  &__bg-shadow-bg {
+    opacity: $bg-shadows-opacity;
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    z-index: $bg-shadow-z-index;
+  }
+
+  &__bg-shadow-square-1 {
+    opacity: $bg-shadows-opacity;
+    position: absolute;
+    top: -50%;
+    right: 30%;
+    transform: scale(1.2);
+    z-index: $bg-shadow-z-index;
+  }
+
+  &__bg-shadow-square-2 {
+    opacity: $bg-shadows-opacity;
+    position: absolute;
+    top: -120%;
+    left: 45%;
+    transform: scale(1.2);
+    z-index: $bg-shadow-z-index;
   }
 
   &__image-content {
     max-width: none;
-
     position: absolute;
-    top: 0;
-    right: $container-padding;
-    z-index: 2;
-
-    &::before {
-      content: "";
-      opacity: $bg-shadows-opacity;
-      position: absolute;
-      width: 605.91px;
-      height: 192.46px;
-      left: -40px;
-      bottom: -50px;
-
-      background: $bg-shadow-color-black;
-      -webkit-filter: blur(300px);
-      filter: blur(300px);
-      border-radius: 500px;
-      transform: rotate(157.75deg);
-      z-index: $bg-shadow-z-index;
-    }
-
-    &::after {
-      content: "";
-      opacity: 60%;
-
-      position: absolute;
-      width: 400.34px;
-      height: 163.39px;
-      left: 160px;
-      top: 60px;
-
-      background-color: aqua;
-      background: radial-gradient(circle, rgba(255, 207, 122, 1) 0%, rgba(167, 78, 2, 1) 100%);
-      -webkit-filter: blur(300px);
-      filter: blur(300px);
-      border-radius: 50%;
-
-      -webkit-animation: scale-m 1.5s alternate infinite ease-in-out;
-
-              animation: scale-m 1.5s alternate infinite ease-in-out;
-      z-index: $bg-shadow-z-index;
-    }
+    z-index: -10;
   }
 }

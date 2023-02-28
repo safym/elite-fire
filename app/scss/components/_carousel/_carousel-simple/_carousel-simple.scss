@@ -1,8 +1,8 @@
-.carousel {
+.carousel-simple {
   position: relative;
 
-
   max-width: 537px;
+  width: 100%;
   min-height: 346px;
 
   background-color: var(--colorBlack);
@@ -16,7 +16,8 @@
     bottom: 10%;
     display: flex;
     justify-content: space-between;
-  
+    align-items: center;
+
     & :not(:last-child) {
       margin-right: 16px;
     }

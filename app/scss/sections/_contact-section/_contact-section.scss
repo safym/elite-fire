@@ -1,75 +1,31 @@
 .contact-section {
   background-color: var(--colorSecondary-dkr);
+
   &__container {
-    padding: 93px $container-padding 70px  $container-padding;
+    padding: $padding-10x $container-padding;
     box-sizing: content-box;
   }
 
-  &__body {}
-
   &__title {
-    margin-bottom: 72px;
+    margin-bottom: $margin-7x;
   }
 
   &__columns-wrapper {
     display: flex;
-    justify-content: space-between;
   }
 
   &__column {
     position: relative;
+
     min-height: 200px;
     max-width: 300px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__contact-wrapper {}
-
   &__button {
     width: 280px;
-  }
-}
-
-
-.contact-wrapper {
-  &__title {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 257%;
-    color: var(--colorSecondary);
-    margin-bottom: 3px;
-  }
-
-  &__link {
-    height: 50%;
-    transition: 0.25s;
-    color: var(--primaryTextColor);
-
-    &:hover {
-      color: var(--colorPrimary);
-      background-color: transparent;
-      text-decoration: none;
-    }
-    &:active {
-      color: var(--colorPrimary);
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    &_size {
-      &_m {
-        font-weight: 300;
-        line-height: 164%;
-        font-size: 22px;
-      }
-
-      &_l {
-        font-weight: 250;
-        font-size: 36px;
-        line-height: 92%;
-      }
-    }
   }
 }

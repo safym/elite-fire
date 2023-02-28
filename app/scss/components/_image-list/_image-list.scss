@@ -1,0 +1,20 @@
+.images-list {
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: $margin-3x;
+  -moz-column-gap: $margin-3x;
+  column-gap: $margin-3x;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    min-width: 370px;
+    min-height: 267px;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    background-color: var(--colorBlack);
+  }
+}

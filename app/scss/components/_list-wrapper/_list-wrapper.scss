@@ -1,0 +1,28 @@
+.list-wrapper {
+  &__title {
+    margin-bottom: $margin;
+
+    color: var(--colorSecondary-lt);
+    font-size: 18px;
+    line-height: 193%;
+    font-weight: 400;
+  }
+
+  &__list {
+    &_columns {
+      &_one {
+        -moz-columns: 1;
+        columns: 1;
+      }
+
+      &_two {
+        -moz-columns: 2;
+        columns: 2;
+      }
+    }
+  }
+
+  &__item {
+    line-height: 193%;
+  }
+}

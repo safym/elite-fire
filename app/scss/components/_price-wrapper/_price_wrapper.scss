@@ -1,0 +1,16 @@
+.price-wrapper {
+  font-weight: $secondary-font-weight;
+  color: var(--colorPrimary);
+
+  &__label {
+    font-size: 18px;
+    letter-spacing: 0.10em;
+  }
+
+  &__price {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.06em;
+    line-height: 40px;
+  }
+}

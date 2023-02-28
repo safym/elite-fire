@@ -1,20 +1,24 @@
 .link {
   transition: 0.25s;
+
   &:link {
     color: var(--colorSecondary);
     background-color: transparent;
     text-decoration: none;
   }
+
   &:visited {
     color: var(--colorSecondary);
     background-color: transparent;
     text-decoration: none;
   }
+
   &:hover {
     color: var(--colorPrimary);
     background-color: transparent;
     text-decoration: none;
   }
+
   &:active {
     color: var(--colorPrimary);
     background-color: transparent;

@@ -1,16 +1,18 @@
 .reasons-section {
   &__container {
-    padding: 50px $container-padding;
+    padding: $padding-6x $container-padding;
     box-sizing: content-box;
   }
+
   &__body {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   &__title-wrapper {
     width: 100%;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: $margin-4x;
   }
 }

@@ -2,18 +2,22 @@
   &__checkbox:checked~.menu__button>span {
     transform: rotate(45deg);
   }
+
   &__checkbox:checked~.menu__button>span::before {
     top: 0;
     transform: rotate(0);
   }
+
   &__checkbox:checked~.menu__button>span::after {
     top: 0;
     transform: rotate(90deg);
   }
+
   &__checkbox:checked~.menu__box {
     visibility: visible;
     left: 0;
   }
+
   &__checkbox {
     display: none;
   }
@@ -21,17 +25,20 @@
 
 .menu {
   &__button {
+    $size: 26px;
+
     align-items: center;
     position: fixed;
     top: 25px;
     right: 15px;
 
-    width: 26px;
-    height: 26px;
+    width: $size;
+    height: $size;
 
     cursor: pointer;
-    z-index: 10;
+    z-index: $menu-btn-z-index;
   }
+
   &__button>span,
   &__button>span::before,
   &__button>span::after {
@@ -45,10 +52,12 @@
 
     transition-duration: .25s;
   }
+
   &__button>span::before {
     content: '';
     top: -8px;
   }
+
   &__button>span::after {
     content: '';
     top: 8px;

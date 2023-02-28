@@ -1,0 +1,52 @@
+.slider {
+  $pos-top: 0;
+  $pos-bottom: 10%;
+
+  position: relative;
+
+  &__label-from {
+    position: absolute;
+    left: $pos-top;
+    bottom: $pos-bottom;
+  }
+
+  &__label-to {
+    position: absolute;
+    right: $pos-top;
+    bottom: $pos-bottom;
+  }
+
+  &__container {
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+
+  &__input {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 2px;
+
+    background: var(--colorPrimary);
+
+    &::-webkit-slider-thumb {
+      width: 30px;
+      height: 30px;
+
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 2px;
+      border: none;
+      background: var(--colorPrimary);
+    }
+
+    &::-moz-range-thumb {
+      width: 30px;
+      height: 30px;
+      border-radius: 2px;
+      border: none;
+      background: var(--colorPrimary);
+    }
+  }
+}

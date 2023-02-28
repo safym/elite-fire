@@ -1,0 +1,74 @@
+.carousel-gallery {
+  $pos-bottom: 10%;
+
+  $pos-controls-y: 35%;
+  $pos-controls-x: 1%;
+
+  $pos-pagination-y: 0;
+  $pos-pagination-x: 40%;
+
+  position: relative;
+  padding-bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+
+  &__images {
+    width: 400%;
+    height: 100%;
+
+    position: relative;
+    display: flex;
+
+    transition: transform 0.5s ease-in-out;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  &__images img {
+    width: 25%;
+    height: 100%;
+
+    position: relative;
+
+    transform: scale(0.8);
+  }
+
+  &__prev {
+    position: absolute;
+    top: $pos-controls-y;
+    left: $pos-controls-x;
+  }
+
+  &__next {
+    position: absolute;
+    top: $pos-controls-y;
+    right: $pos-controls-x;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: $pos-pagination-y;
+    left: $pos-pagination-x;
+  }
+
+  &__pagination span {
+    width: 10px;
+    height: 2px;
+
+    display: inline-block;
+
+    background-color: var(--colorPaginationInactive);
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__pagination &__page_state_active {
+    background-color: var(--colorPaginationActive);
+  }
+}

@@ -1,0 +1,45 @@
+//--desktop
+@media only screen and (min-width: 900px) {
+  .main-section {
+    &__container {
+      padding: 0 $container-padding $padding-12x $container-padding;
+    }
+
+    &__body {
+      align-items: flex-start;
+    }
+
+    &__image-content {
+      top: 0;
+      right: $container-padding;
+      z-index: $image-z-index;
+    }
+  }
+}
+
+//--tablet/mobile
+@media only screen and (max-width: 900px) {
+  .main-section {
+    &__title {
+      margin-bottom: $margin-5x;
+    }
+
+    &__header-wrapper {
+      margin: 0;
+    }
+
+    &__body {
+      text-align: center;
+      align-items: center;
+    }
+
+    &__image-content,
+    &__bg-wrapper {
+      display: none;
+    }
+
+    &__container {
+      padding: $padding-7x $container-padding;
+    }
+  }
+}

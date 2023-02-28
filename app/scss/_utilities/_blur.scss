@@ -1,0 +1,20 @@
+.blur {
+  $blur: 50px;
+  $spread: 50px;
+
+  $grad: transparent $spread,
+    #fff calc($spread + $blur),
+    #fff calc(100% - ($spread + $blur)),
+    transparent calc(100% - $spread);
+
+  mask-image:
+    linear-gradient(to right, $grad),
+    linear-gradient(to bottom, $grad);
+
+  -webkit-mask-image:
+    linear-gradient(to right, $grad),
+    linear-gradient(to bottom, $grad);
+
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+}

@@ -1,0 +1,25 @@
+//--desktop
+@media only screen and (min-width: 900px) {
+  .smart-section {
+    &__image {
+      transform: scale(1.1);
+    }
+
+    &__label {
+      position: relative;
+    }
+  }
+}
+
+//--tablet/mobile
+@media only screen and (max-width: 900px) {
+  .smart-section {
+    &__image {
+      transform: scale(1.6);
+    }
+
+    &__label {
+      display: none;
+    }
+  }
+}

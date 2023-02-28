@@ -1,7 +1,8 @@
 .get-catalog-section {
   &__container {
-    padding: 50px $container-padding;
+    padding: $padding-5x $container-padding;
     box-sizing: content-box;
+    position: relative;
   }
 
   &__body {
@@ -10,7 +11,7 @@
     align-items: center;
 
     & :not(:last-child) {
-      margin-bottom: 35px;
+      margin-bottom: $margin-4x;
     }
   }
 
@@ -24,10 +25,20 @@
   &__button {
     min-width: 284px;
     min-height: 62px;
+
     font-weight: $tertiary-font-weight;
     font-size: 18px;
     text-align: center;
+
     color: var(--colorSecondary-dkr);
+    -webkit-animation: scale-s 1s alternate infinite ease-in-out;
     animation: scale-s 1s alternate infinite ease-in-out;
+  }
+
+  &__bg-shadow {
+    position: absolute;
+    bottom: -30%;
+    right: 0%;
+    z-index: $bg-shadow-z-index;
   }
 }

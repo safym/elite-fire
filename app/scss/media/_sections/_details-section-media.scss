@@ -1,0 +1,46 @@
+//--desktop
+@media only screen and (min-width: 900px) {
+  .details-section {
+    &__body {
+      $gap: 120px;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: minmax(740px, auto) minmax(500px, auto);
+      grid-column-gap: $gap;
+      grid-row-gap: $gap;
+
+      grid-template-areas:
+        "kit-wrapper size-wrapper"
+        "finishing-wrapper accessories-wrapper";
+    }
+  }
+}
+
+//--tablet/mobile
+@media only screen and (max-width: 900px) {
+  .details-section {
+    &__body {
+      $gap: 120px;
+
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      grid-column-gap: $gap;
+      grid-row-gap: $gap;
+
+      grid-template-areas:
+        "kit-wrapper"
+        "size-wrapper"
+        "finishing-wrapper"
+        "accessories-wrapper";
+    }
+
+    &__grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 20px;
+    }
+  }
+}

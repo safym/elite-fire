@@ -1,0 +1,15 @@
+.footnote {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 140%;
+    transform: skew(35deg);
+    border-top: 1px solid var(--colorPrimary);
+    border-right: 1px solid var(--colorPrimary);
+    left: 10px;
+    bottom: -160%;
+  }
+}

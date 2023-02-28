@@ -3,7 +3,8 @@ html {scroll-behavior: smooth;}
 body {
   font-family: $primary-font-family;
   font-weight: $primary-font-weight;
-  
+  font-size: $title-font-size-base;
+
   color: var(--primaryTextColor);
 
   background-color:  var(--colorSecondary-dkr);
