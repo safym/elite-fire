@@ -1,4 +1,4 @@
-<h1 align="center">🕐 Adaptive landing page for the bio fireplaces store</h1>
+<h1 align="center">🔥 Adaptive landing page for the bio fireplaces store</h1>
 
 <p align="center">
   <a href="https://skillicons.dev">
