@@ -26,11 +26,12 @@ Live link: [Demo](https://safym.github.io/elite-fire/)
 
 ### 🖥️ Desktop
 <p align="center">
-    <img height="" />
-    <img height="" />
-    <img height="" />
-    <img height="" />
-    <img height="" />
+    <img height="255px" src="https://user-images.githubusercontent.com/99616798/226188596-974fe27f-2a69-4249-8088-ef1460cfa7e5.png" />
+    <img height="255px" src="https://user-images.githubusercontent.com/99616798/226188602-f8b0283b-2251-470e-9b36-27e9b053b356.png" />
+    <img height="255px" src="https://user-images.githubusercontent.com/99616798/226188615-a55016e2-4a25-4764-af83-5abc76c375eb.png" />
+    <img height="255px" src="https://user-images.githubusercontent.com/99616798/226188619-de9402d2-e833-42bf-bc50-03edef3e79ec.png" />
+    <img height="255px" src="https://user-images.githubusercontent.com/99616798/226188626-9f2c2d95-a06a-4e1d-b8ea-5a4891301e01.png" />
+    <img height="255px" src="https://user-images.githubusercontent.com/99616798/226188628-b9b6c199-8050-4b8e-82fe-ea91929e374d.png" />
 </p>
 
 ### 📱 Mobile
